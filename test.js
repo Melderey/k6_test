@@ -1,15 +1,15 @@
 import http from 'k6/http';
 import {check} from 'k6';
 
-const targetRPS = 3;
-const numSteps = 3;
+const targetRPS = 2;
+const numSteps = 2;
 const executor = 'ramping-arrival-rate';
 const startRate = 0;
 const timeUnit = '1s';
 const preAllocatedVUs = 10;
 const maxVUs = 100;
 const rampupDuration = '5s';
-const stageDuration = '60s';
+const stageDuration = '5s';
 
 const getStages = (targetRPS, numSteps, rampupDuration, stageDuration) => {
   const stages = [];
@@ -43,3 +43,13 @@ export default function () {
         'is response status 200': (r) => r.status === 200,
     });
 }
+
+export function handleSummary(data) {
+    // можно записать конкретную метрику
+    // const med_latency = data.metrics.iteration_duration.values.med;
+    // const latency_message = `The median latency was ${med_latency}\n`;
+  
+    return {
+      'stdout_text_summary': JSON.stringify(data)
+    };
+  }
