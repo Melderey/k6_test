@@ -5,7 +5,7 @@
 
 import { sleep, group } from 'k6'
 import http from 'k6/http'
-import { HOST, PORT } from '../utils/utils.js';
+import { HOST, PORT, PASS, LOGIN } from '../utils/utils.js';
 
 export const options = {}
 
@@ -17,8 +17,8 @@ export default function main() {
       `http://${HOST}:${PORT}/cgi-bin/login.pl`,
       {
         userSession: '138334.970433374HVVfzAfpAtVzzzzHtczQDpzDAcf',
-        username: 'jojo',
-        password: 'bean',
+        username: LOGIN,
+        password: PASS,
         'login.x': '59',
         'login.y': '13',
         JSFormSubmit: 'off',
@@ -58,7 +58,7 @@ export default function main() {
         Connection: 'keep-alive',
         Referer: `http://${HOST}:${PORT}/cgi-bin/login.pl`,
         Cookie:
-          'MSO=SID&1707745210; MTUserInfo=firstName&Jojo&address2&&username&jojo&hash&47&lastName&Bean%0A&address1&&creditCard&&expDate&%0A',
+          `MSO=SID&1707745210; MTUserInfo=firstName&Jojo&address2&&username&${LOGIN}&hash&47&lastName&Bean%0A&address1&&creditCard&&expDate&%0A`,
         'Upgrade-Insecure-Requests': '1',
         'Sec-Fetch-Dest': 'frame',
         'Sec-Fetch-Mode': 'navigate',
@@ -78,7 +78,7 @@ export default function main() {
         Connection: 'keep-alive',
         Referer: `http://${HOST}:${PORT}/cgi-bin/login.pl`,
         Cookie:
-          'MSO=SID&1707745210; MTUserInfo=firstName&Jojo&address2&&username&jojo&hash&47&lastName&Bean%0A&address1&&creditCard&&expDate&%0A',
+          `MSO=SID&1707745210; MTUserInfo=firstName&Jojo&address2&&username&${LOGIN}&hash&47&lastName&Bean%0A&address1&&creditCard&&expDate&%0A`,
         'Upgrade-Insecure-Requests': '1',
         'Sec-Fetch-Dest': 'frame',
         'Sec-Fetch-Mode': 'navigate',
@@ -97,7 +97,7 @@ export default function main() {
         Connection: 'keep-alive',
         Referer: `http://${HOST}:${PORT}/cgi-bin/nav.pl?page=menu&in=home`,
         Cookie:
-          'MSO=SID&1707745210; MTUserInfo=firstName&Jojo&address2&&username&jojo&hash&47&lastName&Bean%0A&address1&&creditCard&&expDate&%0A',
+          `MSO=SID&1707745210; MTUserInfo=firstName&Jojo&address2&&username&${LOGIN}&hash&47&lastName&Bean%0A&address1&&creditCard&&expDate&%0A`,
         'Sec-Fetch-Dest': 'image',
         'Sec-Fetch-Mode': 'no-cors',
         'Sec-Fetch-Site': 'same-origin',
@@ -115,7 +115,7 @@ export default function main() {
         Connection: 'keep-alive',
         Referer: `http://${HOST}:${PORT}/cgi-bin/nav.pl?page=menu&in=home`,
         Cookie:
-          'MSO=SID&1707745210; MTUserInfo=firstName&Jojo&address2&&username&jojo&hash&47&lastName&Bean%0A&address1&&creditCard&&expDate&%0A',
+          `MSO=SID&1707745210; MTUserInfo=firstName&Jojo&address2&&username&${LOGIN}&hash&47&lastName&Bean%0A&address1&&creditCard&&expDate&%0A`,
         'Sec-Fetch-Dest': 'image',
         'Sec-Fetch-Mode': 'no-cors',
         'Sec-Fetch-Site': 'same-origin',
@@ -133,7 +133,7 @@ export default function main() {
         Connection: 'keep-alive',
         Referer: `http://${HOST}:${PORT}/cgi-bin/nav.pl?page=menu&in=home`,
         Cookie:
-          'MSO=SID&1707745210; MTUserInfo=firstName&Jojo&address2&&username&jojo&hash&47&lastName&Bean%0A&address1&&creditCard&&expDate&%0A',
+          `MSO=SID&1707745210; MTUserInfo=firstName&Jojo&address2&&username&${LOGIN}&hash&47&lastName&Bean%0A&address1&&creditCard&&expDate&%0A`,
         'Sec-Fetch-Dest': 'image',
         'Sec-Fetch-Mode': 'no-cors',
         'Sec-Fetch-Site': 'same-origin',
@@ -151,7 +151,7 @@ export default function main() {
         Connection: 'keep-alive',
         Referer: `http://${HOST}:${PORT}/cgi-bin/nav.pl?page=menu&in=home`,
         Cookie:
-          'MSO=SID&1707745210; MTUserInfo=firstName&Jojo&address2&&username&jojo&hash&47&lastName&Bean%0A&address1&&creditCard&&expDate&%0A',
+          `MSO=SID&1707745210; MTUserInfo=firstName&Jojo&address2&&username&${LOGIN}&hash&47&lastName&Bean%0A&address1&&creditCard&&expDate&%0A`,
         'Sec-Fetch-Dest': 'image',
         'Sec-Fetch-Mode': 'no-cors',
         'Sec-Fetch-Site': 'same-origin',

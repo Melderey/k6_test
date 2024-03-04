@@ -5,7 +5,7 @@
 
 import { sleep, group } from 'k6'
 import http from 'k6/http'
-import { HOST, PORT } from '../utils/utils.js';
+import { HOST, PORT, LOGIN } from '../utils/utils.js';
 
 export const options = {}
 
@@ -30,7 +30,7 @@ export default function main() {
           Connection: 'keep-alive',
           Referer: `http://${HOST}:${PORT}/cgi-bin/reservations.pl?page=welcome`,
           Cookie:
-            'MSO=SID&1707745210; MTUserInfo=firstName&Jojo&address2&&username&jojo&hash&47&lastName&Bean%0A&address1&&creditCard&&expDate&%0A',
+            `MSO=SID&1707745210; MTUserInfo=firstName&Jojo&address2&&username&${LOGIN}&hash&47&lastName&Bean%0A&address1&&creditCard&&expDate&%0A`,
           'Upgrade-Insecure-Requests': '1',
           'Sec-Fetch-Dest': 'frame',
           'Sec-Fetch-Mode': 'navigate',
