@@ -1,5 +1,8 @@
 {
   "devDependencies": {
-    "k6": "^0.0.0"
+    "k6": "0.0.0"
+  },
+  "dependencies": {
+    "har-to-k6": "0.14.7"
   }
 }
