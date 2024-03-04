@@ -5,19 +5,20 @@
 
 import { sleep, group } from 'k6'
 import http from 'k6/http'
+import { HOST, PORT } from '../utils/utils.js';
 
 export const options = {}
 
 export default function main() {
   let response
 
-  group('page_4 - http://localhost:1080/webtours/', function () {
+  group(`page_4 - http://${HOST}:${PORT}/webtours/`, function () {
     response = http.post(
-      'http://localhost:1080/cgi-bin/reservations.pl',
+      `http://${HOST}:${PORT}/cgi-bin/reservations.pl`,
       'advanceDiscount=0&depart=Denver&departDate=02%2F13%2F2024&arrive=London&returnDate=03%2F14%2F2024&numPassengers=1&roundtrip=on&seatPref=None&seatType=Coach&findFlights.x=75&findFlights.y=8&.cgifields=roundtrip%2CseatType%2CseatPref',
       {
         headers: {
-          Host: 'localhost:1080',
+          Host: `${HOST}:${PORT}`,
           'User-Agent':
             'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:122.0) Gecko/20100101 Firefox/122.0',
           Accept:
@@ -25,9 +26,9 @@ export default function main() {
           'Accept-Language': 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3',
           'Accept-Encoding': 'gzip, deflate, br',
           'Content-Type': 'application/x-www-form-urlencoded',
-          Origin: 'http://localhost:1080',
+          Origin: `http://${HOST}:${PORT}`,
           Connection: 'keep-alive',
-          Referer: 'http://localhost:1080/cgi-bin/reservations.pl?page=welcome',
+          Referer: `http://${HOST}:${PORT}/cgi-bin/reservations.pl?page=welcome`,
           Cookie:
             'MSO=SID&1707745210; MTUserInfo=firstName&Jojo&address2&&username&jojo&hash&47&lastName&Bean%0A&address1&&creditCard&&expDate&%0A',
           'Upgrade-Insecure-Requests': '1',
@@ -39,15 +40,15 @@ export default function main() {
       }
     )
 
-    response = http.get('http://localhost:1080/WebTours/images/button_next.gif', {
+    response = http.get(`http://${HOST}:${PORT}/WebTours/images/button_next.gif`, {
       headers: {
-        Host: 'localhost:1080',
+        Host: `${HOST}:${PORT}`,
         'User-Agent':
           'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:122.0) Gecko/20100101 Firefox/122.0',
         Accept: 'image/avif,image/webp,*/*',
         'Accept-Language': 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3',
         'Accept-Encoding': 'gzip, deflate, br',
-        Referer: 'http://localhost:1080/cgi-bin/reservations.pl',
+        Referer: `http://${HOST}:${PORT}/cgi-bin/reservations.pl`,
       },
     })
   })
