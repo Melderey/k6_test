@@ -3,16 +3,17 @@
  * Browser: Firefox 122.0.1
  */
 
-import { sleep, group } from 'k6'
-import http from 'k6/http'
+import { sleep, group } from 'k6';
+import http from 'k6/http';
 import { HOST, PORT, LOGIN } from '../utils/utils.js';
 
-export const options = {}
+export const options = {};
 
 export default function main() {
-  let response
+  // eslint-disable-next-line no-unused-vars
+  let response;
 
-  group(`page_3 - http://${HOST}:${PORT}/webtours/`, function () {
+  group(`page_3 - http://${HOST}:${PORT}/webtours/`, () => {
     response = http.get(`http://${HOST}:${PORT}/cgi-bin/welcome.pl?page=search`, {
       headers: {
         Host: `${HOST}:${PORT}`,
@@ -32,7 +33,7 @@ export default function main() {
         'Sec-Fetch-Site': 'same-origin',
         'Sec-Fetch-User': '?1',
       },
-    })
+    });
     response = http.get(`http://${HOST}:${PORT}/cgi-bin/nav.pl?page=menu&in=flights`, {
       headers: {
         Host: `${HOST}:${PORT}`,
@@ -51,7 +52,7 @@ export default function main() {
         'Sec-Fetch-Mode': 'navigate',
         'Sec-Fetch-Site': 'same-origin',
       },
-    })
+    });
     response = http.get(`http://${HOST}:${PORT}/cgi-bin/reservations.pl?page=welcome`, {
       headers: {
         Host: `${HOST}:${PORT}`,
@@ -70,7 +71,7 @@ export default function main() {
         'Sec-Fetch-Mode': 'navigate',
         'Sec-Fetch-Site': 'same-origin',
       },
-    })
+    });
     response = http.get(`http://${HOST}:${PORT}/WebTours/images/button_next.gif`, {
       headers: {
         Host: `${HOST}:${PORT}`,
@@ -87,7 +88,7 @@ export default function main() {
         'Sec-Fetch-Mode': 'no-cors',
         'Sec-Fetch-Site': 'same-origin',
       },
-    })
+    });
     response = http.get(`http://${HOST}:${PORT}/WebTours/images/in_flights.gif`, {
       headers: {
         Host: `${HOST}:${PORT}`,
@@ -104,7 +105,7 @@ export default function main() {
         'Sec-Fetch-Mode': 'no-cors',
         'Sec-Fetch-Site': 'same-origin',
       },
-    })
+    });
     response = http.get(`http://${HOST}:${PORT}/WebTours/images/home.gif`, {
       headers: {
         Host: `${HOST}:${PORT}`,
@@ -121,7 +122,7 @@ export default function main() {
         'Sec-Fetch-Mode': 'no-cors',
         'Sec-Fetch-Site': 'same-origin',
       },
-    })
+    });
     response = http.get(`http://${HOST}:${PORT}/WebTours/images/itinerary.gif`, {
       headers: {
         Host: `${HOST}:${PORT}`,
@@ -132,7 +133,7 @@ export default function main() {
         'Accept-Encoding': 'gzip, deflate, br',
         Referer: `http://${HOST}:${PORT}/cgi-bin/nav.pl?page=menu&in=flights`,
       },
-    })
+    });
     response = http.get(`http://${HOST}:${PORT}/WebTours/images/signoff.gif`, {
       headers: {
         Host: `${HOST}:${PORT}`,
@@ -143,9 +144,9 @@ export default function main() {
         'Accept-Encoding': 'gzip, deflate, br',
         Referer: `http://${HOST}:${PORT}/cgi-bin/nav.pl?page=menu&in=flights`,
       },
-    })
-  })
+    });
+  });
 
   // Automatically added sleep
-  sleep(1)
+  sleep(1);
 }

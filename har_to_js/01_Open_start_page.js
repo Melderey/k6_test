@@ -3,19 +3,20 @@
  * Browser: Firefox 122.0.1
  */
 
-import { sleep, group } from 'k6'
-import http from 'k6/http'
+import { sleep, group } from 'k6';
+import http from 'k6/http';
 import { HOST, PORT } from '../utils/utils.js';
 
-export const options = {}
+export const options = {};
 
 export default function main() {
-  let response
+  // eslint-disable-next-line no-unused-vars
+  let response;
 
-  group(`page_1 - http://${HOST}:${PORT}/webtours/`, function () {
+  group(`page_1 - http://${HOST}:${PORT}/webtours/`, () => {
     response = http.get(`http://${HOST}:${PORT}/webtours/`, {
       headers: {
-        Host:`${HOST}:${PORT}`,
+        Host: `${HOST}:${PORT}`,
         'User-Agent':
           'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:122.0) Gecko/20100101 Firefox/122.0',
         Accept:
@@ -30,7 +31,7 @@ export default function main() {
         'Sec-Fetch-Site': 'none',
         'Sec-Fetch-User': '?1',
       },
-    })
+    });
     response = http.get(`http://${HOST}:${PORT}/webtours/header.html`, {
       headers: {
         Host: `${HOST}:${PORT}`,
@@ -48,7 +49,7 @@ export default function main() {
         'Sec-Fetch-Mode': 'navigate',
         'Sec-Fetch-Site': 'same-origin',
       },
-    })
+    });
     response = http.get(`http://${HOST}:${PORT}/favicon.ico`, {
       headers: {
         Host: `${HOST}:${PORT}`,
@@ -64,7 +65,7 @@ export default function main() {
         'Sec-Fetch-Mode': 'no-cors',
         'Sec-Fetch-Site': 'same-origin',
       },
-    })
+    });
     response = http.get(`http://${HOST}:${PORT}/cgi-bin/welcome.pl?signOff=true`, {
       headers: {
         Host: `${HOST}:${PORT}`,
@@ -82,7 +83,7 @@ export default function main() {
         'Sec-Fetch-Mode': 'navigate',
         'Sec-Fetch-Site': 'same-origin',
       },
-    })
+    });
     response = http.get(`http://${HOST}:${PORT}/cgi-bin/nav.pl?in=home`, {
       headers: {
         Host: `${HOST}:${PORT}`,
@@ -100,7 +101,7 @@ export default function main() {
         'Sec-Fetch-Mode': 'navigate',
         'Sec-Fetch-Site': 'same-origin',
       },
-    })
+    });
     response = http.get(`http://${HOST}:${PORT}/WebTours/home.html`, {
       headers: {
         Host: `${HOST}:${PORT}`,
@@ -118,9 +119,9 @@ export default function main() {
         'Sec-Fetch-Mode': 'navigate',
         'Sec-Fetch-Site': 'same-origin',
       },
-    })
-  })
+    });
+  });
 
   // Automatically added sleep
-  sleep(1)
+  sleep(1);
 }

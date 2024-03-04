@@ -3,16 +3,18 @@
  * Browser: Firefox 122.0.1
  */
 
-import { sleep, group } from 'k6'
-import http from 'k6/http'
+import { sleep, group } from 'k6';
+import http from 'k6/http';
 import { HOST, PORT, LOGIN } from '../utils/utils.js';
 
-export const options = {}
+export const options = {};
 
 export default function main() {
-  let response
+  // eslint-disable-next-line no-unused-vars
+  // eslint-disable-next-line no-unused-vars
+  let response;
 
-  group(`page_1 - http://${HOST}:${PORT}/webtours/`, function () {
+  group(`page_1 - http://${HOST}:${PORT}/webtours/`, () => {
     response = http.post(
       `http://${HOST}:${PORT}/cgi-bin/itinerary.pl`,
       'flightID=0-7-JB%2C753-1564-JB&removeAllFlights.x=65&removeAllFlights.y=12&.cgifields=1%2C2',
@@ -26,7 +28,7 @@ export default function main() {
           'Accept-Language': 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3',
           'Accept-Encoding': 'gzip, deflate, br',
           'Content-Type': 'application/x-www-form-urlencoded',
-          Origin: 'http://${HOST}:${PORT}',
+          Origin: `http://${HOST}:${PORT}`,
           Connection: 'keep-alive',
           Referer: `http://${HOST}:${PORT}/cgi-bin/itinerary.pl`,
           Cookie:
@@ -37,10 +39,10 @@ export default function main() {
           'Sec-Fetch-Site': 'same-origin',
           'Sec-Fetch-User': '?1',
         },
-      }
-    )
-  })
+      },
+    );
+  });
 
   // Automatically added sleep
-  sleep(1)
+  sleep(1);
 }

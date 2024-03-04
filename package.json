@@ -1,9 +1,13 @@
 {
   "devDependencies": {
-    "eslint": "^8.57.0",
+    "eslint": "8.57.0",
+    "eslint-config-airbnb": "19.0.4",
     "k6": "0.0.0"
   },
   "dependencies": {
     "har-to-k6": "0.14.7"
+  },
+  "scripts": {
+    "lint": "npx eslint \"**/*.js\""
   }
 }

@@ -3,16 +3,17 @@
  * Browser: Firefox 122.0.1
  */
 
-import { sleep, group } from 'k6'
-import http from 'k6/http'
+import { sleep, group } from 'k6';
+import http from 'k6/http';
 import { HOST, PORT, LOGIN } from '../utils/utils.js';
 
-export const options = {}
+export const options = {};
 
 export default function main() {
-  let response
+  // eslint-disable-next-line no-unused-vars
+  let response;
 
-  group(`page_10 - http://${HOST}:${PORT}/webtours/`, function () {
+  group(`page_10 - http://${HOST}:${PORT}/webtours/`, () => {
     response = http.get(`http://${HOST}:${PORT}/cgi-bin/welcome.pl?signOff=1`, {
       headers: {
         Host: `${HOST}:${PORT}`,
@@ -32,7 +33,7 @@ export default function main() {
         'Sec-Fetch-Site': 'same-origin',
         'Sec-Fetch-User': '?1',
       },
-    })
+    });
     response = http.get(`http://${HOST}:${PORT}/cgi-bin/nav.pl?in=home`, {
       headers: {
         Host: `${HOST}:${PORT}`,
@@ -50,7 +51,7 @@ export default function main() {
         'Sec-Fetch-Mode': 'navigate',
         'Sec-Fetch-Site': 'same-origin',
       },
-    })
+    });
     response = http.get(`http://${HOST}:${PORT}/WebTours/home.html`, {
       headers: {
         Host: `${HOST}:${PORT}`,
@@ -68,7 +69,7 @@ export default function main() {
         'Sec-Fetch-Mode': 'navigate',
         'Sec-Fetch-Site': 'same-origin',
       },
-    })
+    });
     response = http.get(`http://${HOST}:${PORT}/WebTours/images/mer_login.gif`, {
       headers: {
         Host: `${HOST}:${PORT}`,
@@ -84,9 +85,9 @@ export default function main() {
         'Sec-Fetch-Mode': 'no-cors',
         'Sec-Fetch-Site': 'same-origin',
       },
-    })
-  })
+    });
+  });
 
   // Automatically added sleep
-  sleep(1)
+  sleep(1);
 }

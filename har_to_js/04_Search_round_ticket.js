@@ -3,16 +3,17 @@
  * Browser: Firefox 122.0.1
  */
 
-import { sleep, group } from 'k6'
-import http from 'k6/http'
+import { sleep, group } from 'k6';
+import http from 'k6/http';
 import { HOST, PORT, LOGIN } from '../utils/utils.js';
 
-export const options = {}
+export const options = {};
 
 export default function main() {
-  let response
+  // eslint-disable-next-line no-unused-vars
+  let response;
 
-  group(`page_4 - http://${HOST}:${PORT}/webtours/`, function () {
+  group(`page_4 - http://${HOST}:${PORT}/webtours/`, () => {
     response = http.post(
       `http://${HOST}:${PORT}/cgi-bin/reservations.pl`,
       'advanceDiscount=0&depart=Denver&departDate=02%2F13%2F2024&arrive=London&returnDate=03%2F14%2F2024&numPassengers=1&roundtrip=on&seatPref=None&seatType=Coach&findFlights.x=75&findFlights.y=8&.cgifields=roundtrip%2CseatType%2CseatPref',
@@ -37,8 +38,8 @@ export default function main() {
           'Sec-Fetch-Site': 'same-origin',
           'Sec-Fetch-User': '?1',
         },
-      }
-    )
+      },
+    );
 
     response = http.get(`http://${HOST}:${PORT}/WebTours/images/button_next.gif`, {
       headers: {
@@ -50,9 +51,9 @@ export default function main() {
         'Accept-Encoding': 'gzip, deflate, br',
         Referer: `http://${HOST}:${PORT}/cgi-bin/reservations.pl`,
       },
-    })
-  })
+    });
+  });
 
   // Automatically added sleep
-  sleep(1)
+  sleep(1);
 }
