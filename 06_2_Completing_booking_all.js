@@ -5,24 +5,19 @@
 
 import { sleep, group } from 'k6';
 import http from 'k6/http';
-import { HOST, PORT, LOGIN } from '../utils/constants.js';
+import { HOST, PORT, LOGIN } from './constants.js';
 
 export const options = {};
 
 export default function main() {
   // eslint-disable-next-line no-unused-vars
+  // eslint-disable-next-line no-unused-vars
   let response;
 
-  group(`page_9 - http://${HOST}:${PORT}/webtours/`, () => {
+  group(`page_1 - http://${HOST}:${PORT}/webtours/`, () => {
     response = http.post(
       `http://${HOST}:${PORT}/cgi-bin/itinerary.pl`,
-      {
-        1: 'on',
-        flightID: '246889677-92430-JB',
-        'removeFlights.x': '70',
-        'removeFlights.y': '14',
-        '.cgifields': '1',
-      },
+      'flightID=0-7-JB%2C753-1564-JB&removeAllFlights.x=65&removeAllFlights.y=12&.cgifields=1%2C2',
       {
         headers: {
           Host: `${HOST}:${PORT}`,
@@ -37,7 +32,7 @@ export default function main() {
           Connection: 'keep-alive',
           Referer: `http://${HOST}:${PORT}/cgi-bin/itinerary.pl`,
           Cookie:
-            `MSO=SID&1707745210; MTUserInfo=firstName&Jojo&username&${LOGIN}&address2&&hash&47&address1&&lastName&Bean%0A`,
+            `MSO=SID&1707810977; MTUserInfo=hash&47&firstName&Jojo&lastName&Bean%0A&address1&&address2&&username&${LOGIN}`,
           'Upgrade-Insecure-Requests': '1',
           'Sec-Fetch-Dest': 'frame',
           'Sec-Fetch-Mode': 'navigate',

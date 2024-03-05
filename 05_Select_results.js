@@ -5,19 +5,27 @@
 
 import { sleep, group } from 'k6';
 import http from 'k6/http';
-import { HOST, PORT, LOGIN } from '../utils/constants.js';
+import { HOST, PORT, LOGIN } from './constants.js';
 
 export const options = {};
 
 export default function main() {
   // eslint-disable-next-line no-unused-vars
-  // eslint-disable-next-line no-unused-vars
   let response;
 
-  group(`page_1 - http://${HOST}:${PORT}/webtours/`, () => {
+  group(`page_5 - http://${HOST}:${PORT}/webtours/`, () => {
     response = http.post(
-      `http://${HOST}:${PORT}/cgi-bin/itinerary.pl`,
-      'flightID=0-7-JB%2C753-1564-JB&removeAllFlights.x=65&removeAllFlights.y=12&.cgifields=1%2C2',
+      `http://${HOST}:${PORT}/cgi-bin/reservations.pl`,
+      {
+        outboundFlight: '021;301;02/13/2024',
+        returnFlight: '201;301;03/14/2024',
+        numPassengers: '1',
+        advanceDiscount: '0',
+        seatType: 'Coach',
+        seatPref: 'None',
+        'reserveFlights.x': '76',
+        'reserveFlights.y': '6',
+      },
       {
         headers: {
           Host: `${HOST}:${PORT}`,
@@ -30,9 +38,9 @@ export default function main() {
           'Content-Type': 'application/x-www-form-urlencoded',
           Origin: `http://${HOST}:${PORT}`,
           Connection: 'keep-alive',
-          Referer: `http://${HOST}:${PORT}/cgi-bin/itinerary.pl`,
+          Referer: `http://${HOST}:${PORT}/cgi-bin/reservations.pl`,
           Cookie:
-            `MSO=SID&1707810977; MTUserInfo=hash&47&firstName&Jojo&lastName&Bean%0A&address1&&address2&&username&${LOGIN}`,
+            `MSO=SID&1707745210; MTUserInfo=firstName&Jojo&address2&&username&${LOGIN}&hash&47&lastName&Bean%0A&address1&&creditCard&&expDate&%0A`,
           'Upgrade-Insecure-Requests': '1',
           'Sec-Fetch-Dest': 'frame',
           'Sec-Fetch-Mode': 'navigate',
