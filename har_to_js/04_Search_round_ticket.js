@@ -5,7 +5,9 @@
 
 import { sleep, group } from 'k6';
 import http from 'k6/http';
-import { HOST, PORT, LOGIN } from '../utils/utils.js';
+import {
+  HOST, PORT, LOGIN, DEPART_DATE, RETURN_DATE,
+} from '../utils/constants.js';
 
 export const options = {};
 
@@ -16,7 +18,7 @@ export default function main() {
   group(`page_4 - http://${HOST}:${PORT}/webtours/`, () => {
     response = http.post(
       `http://${HOST}:${PORT}/cgi-bin/reservations.pl`,
-      'advanceDiscount=0&depart=Denver&departDate=02%2F13%2F2024&arrive=London&returnDate=03%2F14%2F2024&numPassengers=1&roundtrip=on&seatPref=None&seatType=Coach&findFlights.x=75&findFlights.y=8&.cgifields=roundtrip%2CseatType%2CseatPref',
+      `advanceDiscount=0&depart=Denver&departDate=${DEPART_DATE}&arrive=London&returnDate=${RETURN_DATE}&numPassengers=1&roundtrip=on&seatPref=None&seatType=Coach&findFlights.x=75&findFlights.y=8&.cgifields=roundtrip%2CseatType%2CseatPref`,
       {
         headers: {
           Host: `${HOST}:${PORT}`,

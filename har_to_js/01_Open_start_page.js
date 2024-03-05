@@ -5,7 +5,7 @@
 
 import { sleep, group } from 'k6';
 import http from 'k6/http';
-import { HOST, PORT } from '../utils/utils.js';
+import { HOST, PORT } from '../utils/constants.js';
 
 export const options = {};
 
