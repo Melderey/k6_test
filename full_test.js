@@ -14,6 +14,7 @@ import {
 } from './constants.js';
 
 let USER_SESSION = '';
+let DEPART_CITIES = [];
 
 export const options = {};
 
@@ -352,6 +353,19 @@ export default function main() {
         'Sec-Fetch-Site': 'same-origin',
       },
     });
+
+    // здечь нужные даные
+    console.log('response.body', response.body);
+
+    // а сюда попадает всякая дичь
+    DEPART_CITIES = findBetween(response.body, '">', '</option>', true);
+    console.log('DEPART_CITIES', DEPART_CITIES);
+    console.log('DEPART_CITIES length', DEPART_CITIES.length);
+
+    if (!DEPART_CITIES.length) {
+      throw new Error('DEPART_CITIES not received!');
+    }
+
     response = http.get(`http://${HOST}:${PORT}/WebTours/images/button_next.gif`, {
       headers: {
         Host: `${HOST}:${PORT}`,
