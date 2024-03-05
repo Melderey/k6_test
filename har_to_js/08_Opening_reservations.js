@@ -3,15 +3,16 @@
  * Browser: Firefox 122.0.1
  */
 
-import { sleep, group } from 'k6'
-import http from 'k6/http'
+import { sleep, group } from 'k6';
+import http from 'k6/http';
 
-export const options = {}
+export const options = {};
 
 export default function main() {
-  let response
+  // eslint-disable-next-line no-unused-vars
+  let response;
 
-  group('page_8 - http://localhost:1080/webtours/', function () {
+  group('page_8 - http://localhost:1080/webtours/', () => {
     response = http.get('http://localhost:1080/cgi-bin/welcome.pl?page=itinerary', {
       headers: {
         Host: 'localhost:1080',
@@ -31,7 +32,7 @@ export default function main() {
         'Sec-Fetch-Site': 'same-origin',
         'Sec-Fetch-User': '?1',
       },
-    })
+    });
     response = http.get('http://localhost:1080/cgi-bin/nav.pl?page=menu&in=itinerary', {
       headers: {
         Host: 'localhost:1080',
@@ -50,7 +51,7 @@ export default function main() {
         'Sec-Fetch-Mode': 'navigate',
         'Sec-Fetch-Site': 'same-origin',
       },
-    })
+    });
     response = http.get('http://localhost:1080/cgi-bin/itinerary.pl', {
       headers: {
         Host: 'localhost:1080',
@@ -69,7 +70,7 @@ export default function main() {
         'Sec-Fetch-Mode': 'navigate',
         'Sec-Fetch-Site': 'same-origin',
       },
-    })
+    });
     response = http.get('http://localhost:1080/WebTours/images/cancelreservation.gif', {
       headers: {
         Host: 'localhost:1080',
@@ -86,7 +87,7 @@ export default function main() {
         'Sec-Fetch-Mode': 'no-cors',
         'Sec-Fetch-Site': 'same-origin',
       },
-    })
+    });
     response = http.get('http://localhost:1080/WebTours/images/cancelallreservations.gif', {
       headers: {
         Host: 'localhost:1080',
@@ -103,7 +104,7 @@ export default function main() {
         'Sec-Fetch-Mode': 'no-cors',
         'Sec-Fetch-Site': 'same-origin',
       },
-    })
+    });
     response = http.get('http://localhost:1080/WebTours/images/in_itinerary.gif', {
       headers: {
         Host: 'localhost:1080',
@@ -120,7 +121,7 @@ export default function main() {
         'Sec-Fetch-Mode': 'no-cors',
         'Sec-Fetch-Site': 'same-origin',
       },
-    })
+    });
     response = http.get('http://localhost:1080/WebTours/images/flights.gif', {
       headers: {
         Host: 'localhost:1080',
@@ -131,7 +132,7 @@ export default function main() {
         'Accept-Encoding': 'gzip, deflate, br',
         Referer: 'http://localhost:1080/cgi-bin/nav.pl?page=menu&in=itinerary',
       },
-    })
+    });
     response = http.get('http://localhost:1080/WebTours/images/home.gif', {
       headers: {
         Host: 'localhost:1080',
@@ -142,9 +143,9 @@ export default function main() {
         'Accept-Encoding': 'gzip, deflate, br',
         Referer: 'http://localhost:1080/cgi-bin/nav.pl?page=menu&in=itinerary',
       },
-    })
-  })
+    });
+  });
 
   // Automatically added sleep
-  sleep(1)
+  sleep(1);
 }

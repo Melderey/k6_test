@@ -3,15 +3,16 @@
  * Browser: Firefox 122.0.1
  */
 
-import { sleep, group } from 'k6'
-import http from 'k6/http'
+import { sleep, group } from 'k6';
+import http from 'k6/http';
 
-export const options = {}
+export const options = {};
 
 export default function main() {
-  let response
+  // eslint-disable-next-line no-unused-vars
+  let response;
 
-  group('page_2 - http://localhost:1080/webtours/', function () {
+  group('page_2 - http://localhost:1080/webtours/', () => {
     response = http.post(
       'http://localhost:1080/cgi-bin/login.pl',
       {
@@ -42,8 +43,8 @@ export default function main() {
           'Sec-Fetch-Site': 'same-origin',
           'Sec-Fetch-User': '?1',
         },
-      }
-    )
+      },
+    );
 
     response = http.get('http://localhost:1080/cgi-bin/nav.pl?page=menu&in=home', {
       headers: {
@@ -63,7 +64,7 @@ export default function main() {
         'Sec-Fetch-Mode': 'navigate',
         'Sec-Fetch-Site': 'same-origin',
       },
-    })
+    });
 
     response = http.get('http://localhost:1080/cgi-bin/login.pl?intro=true', {
       headers: {
@@ -83,7 +84,7 @@ export default function main() {
         'Sec-Fetch-Mode': 'navigate',
         'Sec-Fetch-Site': 'same-origin',
       },
-    })
+    });
 
     response = http.get('http://localhost:1080/WebTours/images/flights.gif', {
       headers: {
@@ -101,7 +102,7 @@ export default function main() {
         'Sec-Fetch-Mode': 'no-cors',
         'Sec-Fetch-Site': 'same-origin',
       },
-    })
+    });
 
     response = http.get('http://localhost:1080/WebTours/images/itinerary.gif', {
       headers: {
@@ -119,7 +120,7 @@ export default function main() {
         'Sec-Fetch-Mode': 'no-cors',
         'Sec-Fetch-Site': 'same-origin',
       },
-    })
+    });
 
     response = http.get('http://localhost:1080/WebTours/images/in_home.gif', {
       headers: {
@@ -137,7 +138,7 @@ export default function main() {
         'Sec-Fetch-Mode': 'no-cors',
         'Sec-Fetch-Site': 'same-origin',
       },
-    })
+    });
 
     response = http.get('http://localhost:1080/WebTours/images/signoff.gif', {
       headers: {
@@ -155,9 +156,9 @@ export default function main() {
         'Sec-Fetch-Mode': 'no-cors',
         'Sec-Fetch-Site': 'same-origin',
       },
-    })
-  })
+    });
+  });
 
   // Automatically added sleep
-  sleep(1)
+  sleep(1);
 }

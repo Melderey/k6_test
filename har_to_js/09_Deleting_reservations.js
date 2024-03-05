@@ -3,15 +3,16 @@
  * Browser: Firefox 122.0.1
  */
 
-import { sleep, group } from 'k6'
-import http from 'k6/http'
+import { sleep, group } from 'k6';
+import http from 'k6/http';
 
-export const options = {}
+export const options = {};
 
 export default function main() {
-  let response
+  // eslint-disable-next-line no-unused-vars
+  let response;
 
-  group('page_9 - http://localhost:1080/webtours/', function () {
+  group('page_9 - http://localhost:1080/webtours/', () => {
     response = http.post(
       'http://localhost:1080/cgi-bin/itinerary.pl',
       {
@@ -42,10 +43,10 @@ export default function main() {
           'Sec-Fetch-Site': 'same-origin',
           'Sec-Fetch-User': '?1',
         },
-      }
-    )
-  })
+      },
+    );
+  });
 
   // Automatically added sleep
-  sleep(1)
+  sleep(1);
 }

@@ -15,6 +15,13 @@ const getRandomDate = (start, end) => {
   return randomDate;
 };
 
+export const getRandomCity = (cityArr = []) => {
+  const max = cityArr.length;
+  const cityNum = Math.floor(Math.random() * max);
+
+  return cityArr[cityNum];
+};
+
 export const HOST = 'localhost';
 export const PORT = '1080';
 export const LOGIN = 'jojo';

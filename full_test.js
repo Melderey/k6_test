@@ -10,11 +10,13 @@ import http from 'k6/http';
 import { findBetween } from 'https://jslib.k6.io/k6-utils/1.2.0/index.js';
 
 import {
-  DEPART_DATE, HOST, LOGIN, PASS, PORT, RETURN_DATE,
-} from './constants.js';
+  DEPART_DATE, HOST, LOGIN, PASS, PORT, RETURN_DATE, getRandomCity,
+} from './utils.js';
 
 let USER_SESSION = '';
 let DEPART_CITIES = [];
+let DEPART_CITY = '';
+let RETURN_CITY = '';
 
 export const options = {};
 
@@ -354,15 +356,17 @@ export default function main() {
       },
     });
 
-    // здечь нужные даные
-    console.log('response.body', response.body);
+    // корреляция и поиск случайного города вылета, прилёта
+    DEPART_CITIES = findBetween(response.body, '\n<option value=\"', '\">', true);
 
-    // а сюда попадает всякая дичь
-    DEPART_CITIES = findBetween(response.body, '">', '</option>', true);
-    console.log('DEPART_CITIES', DEPART_CITIES);
-    console.log('DEPART_CITIES length', DEPART_CITIES.length);
+    if (DEPART_CITIES && DEPART_CITIES.length) {
+      DEPART_CITY = getRandomCity(DEPART_CITIES);
+      RETURN_CITY = getRandomCity(DEPART_CITIES);
 
-    if (!DEPART_CITIES.length) {
+      while (DEPART_CITY === RETURN_CITY) {
+        DEPART_CITY = getRandomCity(DEPART_CITIES);
+      }
+    } else {
       throw new Error('DEPART_CITIES not received!');
     }
 
@@ -443,12 +447,11 @@ export default function main() {
 
   // Automatically added sleep
   sleep(1);
-
   // 04_Search_round_ticket
   group(`page_4 - http://${HOST}:${PORT}/webtours/`, () => {
     response = http.post(
       `http://${HOST}:${PORT}/cgi-bin/reservations.pl`,
-      `advanceDiscount=0&depart=Denver&departDate=${DEPART_DATE}&arrive=London&returnDate=${RETURN_DATE}&numPassengers=1&roundtrip=on&seatPref=None&seatType=Coach&findFlights.x=75&findFlights.y=8&.cgifields=roundtrip%2CseatType%2CseatPref`,
+      `advanceDiscount=0&depart=${DEPART_CITY}&departDate=${DEPART_DATE}&arrive=${RETURN_CITY}&returnDate=${RETURN_DATE}&numPassengers=1&roundtrip=on&seatPref=None&seatType=Coach&findFlights.x=75&findFlights.y=8&.cgifields=roundtrip%2CseatType%2CseatPref`,
       {
         headers: {
           Host: `${HOST}:${PORT}`,
