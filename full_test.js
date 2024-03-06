@@ -927,9 +927,6 @@ export default function main() {
   RECPONCE_LINE_ID = getResponceLine(FLIGHTS_ID, '%2C');
   RECPONCE_LINE_CGI_FIELDS = getResponceLine(CGI_FIELDS, '%2C');
 
-  // RECPONCE_LINE_ID = getResponceLine(FLIGHTS_ID, ',');
-  // RECPONCE_LINE_CGI_FIELDS = getResponceLine(CGI_FIELDS, ',');
-
   // 09_2_Deleting_reservations_all
   group(`page_6 - http://${HOST}:${PORT}/webtours/`, () => {
     response = http.post(
@@ -959,11 +956,6 @@ export default function main() {
         },
       },
     );
-
-    console.log('RECPONCE_LINE_ID', RECPONCE_LINE_ID);
-    console.log('FLIGHTS_ID', FLIGHTS_ID);
-    // console.log(response.body)
-    console.log(response);
   });
 
   sleep(RANDOM_SMALL_CONSTANT_DELAY);
