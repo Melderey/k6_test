@@ -8,7 +8,7 @@ export default [
     ADRESS2: 'Milan1',
     PASSANGER_NAME: 'Jojo Bean1',
     CREDIT_CARD: 123123121,
-    EXP_DATE: '01.25',
+    EXP_DATE: '01/25',
   },
   {
     LOGIN: 'jojo2',
@@ -19,7 +19,7 @@ export default [
     ADRESS2: 'Milan2',
     PASSANGER_NAME: 'Jojo Bean2',
     CREDIT_CARD: 123123122,
-    EXP_DATE: '01.25',
+    EXP_DATE: '01/25',
   },
   {
     LOGIN: 'jojo3',
@@ -30,7 +30,7 @@ export default [
     ADRESS2: 'Milan3',
     PASSANGER_NAME: 'Jojo Bean3',
     CREDIT_CARD: 123123123,
-    EXP_DATE: '01.25',
+    EXP_DATE: '01/25',
   },
   {
     LOGIN: 'jojo4',
@@ -41,7 +41,7 @@ export default [
     ADRESS2: 'Milan4',
     PASSANGER_NAME: 'Jojo Bean4',
     CREDIT_CARD: 123123124,
-    EXP_DATE: '01.25',
+    EXP_DATE: '01/25',
   },
   {
     LOGIN: 'jojo5',
@@ -52,7 +52,7 @@ export default [
     ADRESS2: 'Milan5',
     PASSANGER_NAME: 'Jojo Bean5',
     CREDIT_CARD: 123123125,
-    EXP_DATE: '01.25',
+    EXP_DATE: '01/25',
   },
   {
     LOGIN: 'jojo6',
@@ -63,7 +63,7 @@ export default [
     ADRESS2: 'Milan6',
     PASSANGER_NAME: 'Jojo Bean6',
     CREDIT_CARD: 123123126,
-    EXP_DATE: '01.25',
+    EXP_DATE: '01/25',
   },
   {
     LOGIN: 'jojo7',
@@ -74,7 +74,7 @@ export default [
     ADRESS2: 'Milan7',
     PASSANGER_NAME: 'Jojo Bean7',
     CREDIT_CARD: 123123127,
-    EXP_DATE: '01.25',
+    EXP_DATE: '01/25',
   },
   {
     LOGIN: 'jojo8',
@@ -85,7 +85,7 @@ export default [
     ADRESS2: 'Milan8',
     PASSANGER_NAME: 'Jojo Bean8',
     CREDIT_CARD: 123123128,
-    EXP_DATE: '01.25',
+    EXP_DATE: '01/25',
   },
   {
     LOGIN: 'jojo9',
@@ -96,7 +96,7 @@ export default [
     ADRESS2: 'Milan9',
     PASSANGER_NAME: 'Jojo Bean9',
     CREDIT_CARD: 123123129,
-    EXP_DATE: '01.25',
+    EXP_DATE: '01/25',
   },
   {
     LOGIN: 'jojo10',
@@ -107,7 +107,7 @@ export default [
     ADRESS2: 'Milan10',
     PASSANGER_NAME: 'Jojo Bean10',
     CREDIT_CARD: 123123130,
-    EXP_DATE: '01.25',
+    EXP_DATE: '01/25',
   },
   {
     LOGIN: 'jojo11',
@@ -118,7 +118,7 @@ export default [
     ADRESS2: 'Milan11',
     PASSANGER_NAME: 'Jojo Bean11',
     CREDIT_CARD: 123123131,
-    EXP_DATE: '01.25',
+    EXP_DATE: '01/25',
   },
   {
     LOGIN: 'jojo12',
@@ -129,7 +129,7 @@ export default [
     ADRESS2: 'Milan12',
     PASSANGER_NAME: 'Jojo Bean12',
     CREDIT_CARD: 123123132,
-    EXP_DATE: '01.25',
+    EXP_DATE: '01/25',
   },
   {
     LOGIN: 'jojo13',
@@ -140,7 +140,7 @@ export default [
     ADRESS2: 'Milan13',
     PASSANGER_NAME: 'Jojo Bean13',
     CREDIT_CARD: 123123133,
-    EXP_DATE: '01.25',
+    EXP_DATE: '01/25',
   },
   {
     LOGIN: 'jojo14',
@@ -151,7 +151,7 @@ export default [
     ADRESS2: 'Milan14',
     PASSANGER_NAME: 'Jojo Bean14',
     CREDIT_CARD: 123123134,
-    EXP_DATE: '01.25',
+    EXP_DATE: '01/25',
   },
   {
     LOGIN: 'jojo15',
@@ -162,7 +162,7 @@ export default [
     ADRESS2: 'Milan15',
     PASSANGER_NAME: 'Jojo Bean15',
     CREDIT_CARD: 123123135,
-    EXP_DATE: '01.25',
+    EXP_DATE: '01/25',
   },
   {
     LOGIN: 'jojo16',
@@ -173,7 +173,7 @@ export default [
     ADRESS2: 'Milan16',
     PASSANGER_NAME: 'Jojo Bean16',
     CREDIT_CARD: 123123136,
-    EXP_DATE: '01.25',
+    EXP_DATE: '01/25',
   },
   {
     LOGIN: 'jojo17',
@@ -184,7 +184,7 @@ export default [
     ADRESS2: 'Milan17',
     PASSANGER_NAME: 'Jojo Bean17',
     CREDIT_CARD: 123123137,
-    EXP_DATE: '01.25',
+    EXP_DATE: '01/25',
   },
   {
     LOGIN: 'jojo18',
@@ -195,7 +195,7 @@ export default [
     ADRESS2: 'Milan18',
     PASSANGER_NAME: 'Jojo Bean18',
     CREDIT_CARD: 123123138,
-    EXP_DATE: '01.25',
+    EXP_DATE: '01/25',
   },
   {
     LOGIN: 'jojo19',
@@ -206,7 +206,7 @@ export default [
     ADRESS2: 'Milan19',
     PASSANGER_NAME: 'Jojo Bean19',
     CREDIT_CARD: 123123139,
-    EXP_DATE: '01.25',
+    EXP_DATE: '01/25',
   },
   {
     LOGIN: 'jojo20',
@@ -217,7 +217,7 @@ export default [
     ADRESS2: 'Milan20',
     PASSANGER_NAME: 'Jojo Bean20',
     CREDIT_CARD: 123123140,
-    EXP_DATE: '01.25',
+    EXP_DATE: '01/25',
   },
   {
     LOGIN: 'jojo21',
@@ -228,7 +228,7 @@ export default [
     ADRESS2: 'Milan21',
     PASSANGER_NAME: 'Jojo Bean21',
     CREDIT_CARD: 123123141,
-    EXP_DATE: '01.25',
+    EXP_DATE: '01/25',
   },
   {
     LOGIN: 'jojo22',
@@ -239,7 +239,7 @@ export default [
     ADRESS2: 'Milan22',
     PASSANGER_NAME: 'Jojo Bean22',
     CREDIT_CARD: 123123142,
-    EXP_DATE: '01.25',
+    EXP_DATE: '01/25',
   },
   {
     LOGIN: 'jojo23',
@@ -250,7 +250,7 @@ export default [
     ADRESS2: 'Milan23',
     PASSANGER_NAME: 'Jojo Bean23',
     CREDIT_CARD: 123123143,
-    EXP_DATE: '01.25',
+    EXP_DATE: '01/25',
   },
   {
     LOGIN: 'jojo24',
@@ -261,7 +261,7 @@ export default [
     ADRESS2: 'Milan24',
     PASSANGER_NAME: 'Jojo Bean24',
     CREDIT_CARD: 123123144,
-    EXP_DATE: '01.25',
+    EXP_DATE: '01/25',
   },
   {
     LOGIN: 'jojo25',
@@ -272,7 +272,7 @@ export default [
     ADRESS2: 'Milan25',
     PASSANGER_NAME: 'Jojo Bean25',
     CREDIT_CARD: 123123145,
-    EXP_DATE: '01.25',
+    EXP_DATE: '01/25',
   },
   {
     LOGIN: 'jojo26',
@@ -283,7 +283,7 @@ export default [
     ADRESS2: 'Milan26',
     PASSANGER_NAME: 'Jojo Bean26',
     CREDIT_CARD: 123123146,
-    EXP_DATE: '01.25',
+    EXP_DATE: '01/25',
   },
   {
     LOGIN: 'jojo27',
@@ -294,7 +294,7 @@ export default [
     ADRESS2: 'Milan27',
     PASSANGER_NAME: 'Jojo Bean27',
     CREDIT_CARD: 123123147,
-    EXP_DATE: '01.25',
+    EXP_DATE: '01/25',
   },
   {
     LOGIN: 'jojo28',
@@ -305,7 +305,7 @@ export default [
     ADRESS2: 'Milan28',
     PASSANGER_NAME: 'Jojo Bean28',
     CREDIT_CARD: 123123148,
-    EXP_DATE: '01.25',
+    EXP_DATE: '01/25',
   },
   {
     LOGIN: 'jojo29',
@@ -316,7 +316,7 @@ export default [
     ADRESS2: 'Milan29',
     PASSANGER_NAME: 'Jojo Bean29',
     CREDIT_CARD: 123123149,
-    EXP_DATE: '01.25',
+    EXP_DATE: '01/25',
   },
   {
     LOGIN: 'jojo30',
@@ -327,7 +327,7 @@ export default [
     ADRESS2: 'Milan30',
     PASSANGER_NAME: 'Jojo Bean30',
     CREDIT_CARD: 123123150,
-    EXP_DATE: '01.25',
+    EXP_DATE: '01/25',
   },
   {
     LOGIN: 'jojo31',
@@ -338,7 +338,7 @@ export default [
     ADRESS2: 'Milan31',
     PASSANGER_NAME: 'Jojo Bean31',
     CREDIT_CARD: 123123151,
-    EXP_DATE: '01.25',
+    EXP_DATE: '01/25',
   },
   {
     LOGIN: 'jojo32',
@@ -349,7 +349,7 @@ export default [
     ADRESS2: 'Milan32',
     PASSANGER_NAME: 'Jojo Bean32',
     CREDIT_CARD: 123123152,
-    EXP_DATE: '01.25',
+    EXP_DATE: '01/25',
   },
   {
     LOGIN: 'jojo33',
@@ -360,7 +360,7 @@ export default [
     ADRESS2: 'Milan33',
     PASSANGER_NAME: 'Jojo Bean33',
     CREDIT_CARD: 123123153,
-    EXP_DATE: '01.25',
+    EXP_DATE: '01/25',
   },
   {
     LOGIN: 'jojo34',
@@ -371,7 +371,7 @@ export default [
     ADRESS2: 'Milan34',
     PASSANGER_NAME: 'Jojo Bean34',
     CREDIT_CARD: 123123154,
-    EXP_DATE: '01.25',
+    EXP_DATE: '01/25',
   },
   {
     LOGIN: 'jojo35',
@@ -382,7 +382,7 @@ export default [
     ADRESS2: 'Milan35',
     PASSANGER_NAME: 'Jojo Bean35',
     CREDIT_CARD: 123123155,
-    EXP_DATE: '01.25',
+    EXP_DATE: '01/25',
   },
   {
     LOGIN: 'jojo36',
@@ -393,7 +393,7 @@ export default [
     ADRESS2: 'Milan36',
     PASSANGER_NAME: 'Jojo Bean36',
     CREDIT_CARD: 123123156,
-    EXP_DATE: '01.25',
+    EXP_DATE: '01/25',
   },
   {
     LOGIN: 'jojo37',
@@ -404,7 +404,7 @@ export default [
     ADRESS2: 'Milan37',
     PASSANGER_NAME: 'Jojo Bean37',
     CREDIT_CARD: 123123157,
-    EXP_DATE: '01.25',
+    EXP_DATE: '01/25',
   },
   {
     LOGIN: 'jojo38',
@@ -415,7 +415,7 @@ export default [
     ADRESS2: 'Milan38',
     PASSANGER_NAME: 'Jojo Bean38',
     CREDIT_CARD: 123123158,
-    EXP_DATE: '01.25',
+    EXP_DATE: '01/25',
   },
   {
     LOGIN: 'jojo39',
@@ -426,7 +426,7 @@ export default [
     ADRESS2: 'Milan39',
     PASSANGER_NAME: 'Jojo Bean39',
     CREDIT_CARD: 123123159,
-    EXP_DATE: '01.25',
+    EXP_DATE: '01/25',
   },
   {
     LOGIN: 'jojo40',
@@ -437,7 +437,7 @@ export default [
     ADRESS2: 'Milan40',
     PASSANGER_NAME: 'Jojo Bean40',
     CREDIT_CARD: 123123160,
-    EXP_DATE: '01.25',
+    EXP_DATE: '01/25',
   },
   {
     LOGIN: 'jojo41',
@@ -448,7 +448,7 @@ export default [
     ADRESS2: 'Milan41',
     PASSANGER_NAME: 'Jojo Bean41',
     CREDIT_CARD: 123123161,
-    EXP_DATE: '01.25',
+    EXP_DATE: '01/25',
   },
   {
     LOGIN: 'jojo42',
@@ -459,7 +459,7 @@ export default [
     ADRESS2: 'Milan42',
     PASSANGER_NAME: 'Jojo Bean42',
     CREDIT_CARD: 123123162,
-    EXP_DATE: '01.25',
+    EXP_DATE: '01/25',
   },
   {
     LOGIN: 'jojo43',
@@ -470,7 +470,7 @@ export default [
     ADRESS2: 'Milan43',
     PASSANGER_NAME: 'Jojo Bean43',
     CREDIT_CARD: 123123163,
-    EXP_DATE: '01.25',
+    EXP_DATE: '01/25',
   },
   {
     LOGIN: 'jojo44',
@@ -481,7 +481,7 @@ export default [
     ADRESS2: 'Milan44',
     PASSANGER_NAME: 'Jojo Bean44',
     CREDIT_CARD: 123123164,
-    EXP_DATE: '01.25',
+    EXP_DATE: '01/25',
   },
   {
     LOGIN: 'jojo45',
@@ -492,7 +492,7 @@ export default [
     ADRESS2: 'Milan45',
     PASSANGER_NAME: 'Jojo Bean45',
     CREDIT_CARD: 123123165,
-    EXP_DATE: '01.25',
+    EXP_DATE: '01/25',
   },
   {
     LOGIN: 'jojo46',
@@ -503,7 +503,7 @@ export default [
     ADRESS2: 'Milan46',
     PASSANGER_NAME: 'Jojo Bean46',
     CREDIT_CARD: 123123166,
-    EXP_DATE: '01.25',
+    EXP_DATE: '01/25',
   },
   {
     LOGIN: 'jojo47',
@@ -514,7 +514,7 @@ export default [
     ADRESS2: 'Milan47',
     PASSANGER_NAME: 'Jojo Bean47',
     CREDIT_CARD: 123123167,
-    EXP_DATE: '01.25',
+    EXP_DATE: '01/25',
   },
   {
     LOGIN: 'jojo48',
@@ -525,7 +525,7 @@ export default [
     ADRESS2: 'Milan48',
     PASSANGER_NAME: 'Jojo Bean48',
     CREDIT_CARD: 123123168,
-    EXP_DATE: '01.25',
+    EXP_DATE: '01/25',
   },
   {
     LOGIN: 'jojo49',
@@ -536,7 +536,7 @@ export default [
     ADRESS2: 'Milan49',
     PASSANGER_NAME: 'Jojo Bean49',
     CREDIT_CARD: 123123169,
-    EXP_DATE: '01.25',
+    EXP_DATE: '01/25',
   },
   {
     LOGIN: 'jojo50',
@@ -547,7 +547,7 @@ export default [
     ADRESS2: 'Milan50',
     PASSANGER_NAME: 'Jojo Bean50',
     CREDIT_CARD: 123123170,
-    EXP_DATE: '01.25',
+    EXP_DATE: '01/25',
   },
   {
     LOGIN: 'jojo51',
@@ -558,7 +558,7 @@ export default [
     ADRESS2: 'Milan51',
     PASSANGER_NAME: 'Jojo Bean51',
     CREDIT_CARD: 123123171,
-    EXP_DATE: '01.25',
+    EXP_DATE: '01/25',
   },
   {
     LOGIN: 'jojo52',
@@ -569,7 +569,7 @@ export default [
     ADRESS2: 'Milan52',
     PASSANGER_NAME: 'Jojo Bean52',
     CREDIT_CARD: 123123172,
-    EXP_DATE: '01.25',
+    EXP_DATE: '01/25',
   },
   {
     LOGIN: 'jojo53',
@@ -580,7 +580,7 @@ export default [
     ADRESS2: 'Milan53',
     PASSANGER_NAME: 'Jojo Bean53',
     CREDIT_CARD: 123123173,
-    EXP_DATE: '01.25',
+    EXP_DATE: '01/25',
   },
   {
     LOGIN: 'jojo54',
@@ -591,7 +591,7 @@ export default [
     ADRESS2: 'Milan54',
     PASSANGER_NAME: 'Jojo Bean54',
     CREDIT_CARD: 123123174,
-    EXP_DATE: '01.25',
+    EXP_DATE: '01/25',
   },
   {
     LOGIN: 'jojo55',
@@ -602,7 +602,7 @@ export default [
     ADRESS2: 'Milan55',
     PASSANGER_NAME: 'Jojo Bean55',
     CREDIT_CARD: 123123175,
-    EXP_DATE: '01.25',
+    EXP_DATE: '01/25',
   },
   {
     LOGIN: 'jojo56',
@@ -613,7 +613,7 @@ export default [
     ADRESS2: 'Milan56',
     PASSANGER_NAME: 'Jojo Bean56',
     CREDIT_CARD: 123123176,
-    EXP_DATE: '01.25',
+    EXP_DATE: '01/25',
   },
   {
     LOGIN: 'jojo57',
@@ -624,7 +624,7 @@ export default [
     ADRESS2: 'Milan57',
     PASSANGER_NAME: 'Jojo Bean57',
     CREDIT_CARD: 123123177,
-    EXP_DATE: '01.25',
+    EXP_DATE: '01/25',
   },
   {
     LOGIN: 'jojo58',
@@ -635,7 +635,7 @@ export default [
     ADRESS2: 'Milan58',
     PASSANGER_NAME: 'Jojo Bean58',
     CREDIT_CARD: 123123178,
-    EXP_DATE: '01.25',
+    EXP_DATE: '01/25',
   },
   {
     LOGIN: 'jojo59',
@@ -646,7 +646,7 @@ export default [
     ADRESS2: 'Milan59',
     PASSANGER_NAME: 'Jojo Bean59',
     CREDIT_CARD: 123123179,
-    EXP_DATE: '01.25',
+    EXP_DATE: '01/25',
   },
   {
     LOGIN: 'jojo60',
@@ -657,7 +657,7 @@ export default [
     ADRESS2: 'Milan60',
     PASSANGER_NAME: 'Jojo Bean60',
     CREDIT_CARD: 123123180,
-    EXP_DATE: '01.25',
+    EXP_DATE: '01/25',
   },
   {
     LOGIN: 'jojo61',
@@ -668,7 +668,7 @@ export default [
     ADRESS2: 'Milan61',
     PASSANGER_NAME: 'Jojo Bean61',
     CREDIT_CARD: 123123181,
-    EXP_DATE: '01.25',
+    EXP_DATE: '01/25',
   },
   {
     LOGIN: 'jojo62',
@@ -679,7 +679,7 @@ export default [
     ADRESS2: 'Milan62',
     PASSANGER_NAME: 'Jojo Bean62',
     CREDIT_CARD: 123123182,
-    EXP_DATE: '01.25',
+    EXP_DATE: '01/25',
   },
   {
     LOGIN: 'jojo63',
@@ -690,7 +690,7 @@ export default [
     ADRESS2: 'Milan63',
     PASSANGER_NAME: 'Jojo Bean63',
     CREDIT_CARD: 123123183,
-    EXP_DATE: '01.25',
+    EXP_DATE: '01/25',
   },
   {
     LOGIN: 'jojo64',
@@ -701,7 +701,7 @@ export default [
     ADRESS2: 'Milan64',
     PASSANGER_NAME: 'Jojo Bean64',
     CREDIT_CARD: 123123184,
-    EXP_DATE: '01.25',
+    EXP_DATE: '01/25',
   },
   {
     LOGIN: 'jojo65',
@@ -712,7 +712,7 @@ export default [
     ADRESS2: 'Milan65',
     PASSANGER_NAME: 'Jojo Bean65',
     CREDIT_CARD: 123123185,
-    EXP_DATE: '01.25',
+    EXP_DATE: '01/25',
   },
   {
     LOGIN: 'jojo66',
@@ -723,7 +723,7 @@ export default [
     ADRESS2: 'Milan66',
     PASSANGER_NAME: 'Jojo Bean66',
     CREDIT_CARD: 123123186,
-    EXP_DATE: '01.25',
+    EXP_DATE: '01/25',
   },
   {
     LOGIN: 'jojo67',
@@ -734,7 +734,7 @@ export default [
     ADRESS2: 'Milan67',
     PASSANGER_NAME: 'Jojo Bean67',
     CREDIT_CARD: 123123187,
-    EXP_DATE: '01.25',
+    EXP_DATE: '01/25',
   },
   {
     LOGIN: 'jojo68',
@@ -745,7 +745,7 @@ export default [
     ADRESS2: 'Milan68',
     PASSANGER_NAME: 'Jojo Bean68',
     CREDIT_CARD: 123123188,
-    EXP_DATE: '01.25',
+    EXP_DATE: '01/25',
   },
   {
     LOGIN: 'jojo69',
@@ -756,7 +756,7 @@ export default [
     ADRESS2: 'Milan69',
     PASSANGER_NAME: 'Jojo Bean69',
     CREDIT_CARD: 123123189,
-    EXP_DATE: '01.25',
+    EXP_DATE: '01/25',
   },
   {
     LOGIN: 'jojo70',
@@ -767,7 +767,7 @@ export default [
     ADRESS2: 'Milan70',
     PASSANGER_NAME: 'Jojo Bean70',
     CREDIT_CARD: 123123190,
-    EXP_DATE: '01.25',
+    EXP_DATE: '01/25',
   },
   {
     LOGIN: 'jojo71',
@@ -778,7 +778,7 @@ export default [
     ADRESS2: 'Milan71',
     PASSANGER_NAME: 'Jojo Bean71',
     CREDIT_CARD: 123123191,
-    EXP_DATE: '01.25',
+    EXP_DATE: '01/25',
   },
   {
     LOGIN: 'jojo72',
@@ -789,7 +789,7 @@ export default [
     ADRESS2: 'Milan72',
     PASSANGER_NAME: 'Jojo Bean72',
     CREDIT_CARD: 123123192,
-    EXP_DATE: '01.25',
+    EXP_DATE: '01/25',
   },
   {
     LOGIN: 'jojo73',
@@ -800,7 +800,7 @@ export default [
     ADRESS2: 'Milan73',
     PASSANGER_NAME: 'Jojo Bean73',
     CREDIT_CARD: 123123193,
-    EXP_DATE: '01.25',
+    EXP_DATE: '01/25',
   },
   {
     LOGIN: 'jojo74',
@@ -811,7 +811,7 @@ export default [
     ADRESS2: 'Milan74',
     PASSANGER_NAME: 'Jojo Bean74',
     CREDIT_CARD: 123123194,
-    EXP_DATE: '01.25',
+    EXP_DATE: '01/25',
   },
   {
     LOGIN: 'jojo75',
@@ -822,7 +822,7 @@ export default [
     ADRESS2: 'Milan75',
     PASSANGER_NAME: 'Jojo Bean75',
     CREDIT_CARD: 123123195,
-    EXP_DATE: '01.25',
+    EXP_DATE: '01/25',
   },
   {
     LOGIN: 'jojo76',
@@ -833,7 +833,7 @@ export default [
     ADRESS2: 'Milan76',
     PASSANGER_NAME: 'Jojo Bean76',
     CREDIT_CARD: 123123196,
-    EXP_DATE: '01.25',
+    EXP_DATE: '01/25',
   },
   {
     LOGIN: 'jojo77',
@@ -844,7 +844,7 @@ export default [
     ADRESS2: 'Milan77',
     PASSANGER_NAME: 'Jojo Bean77',
     CREDIT_CARD: 123123197,
-    EXP_DATE: '01.25',
+    EXP_DATE: '01/25',
   },
   {
     LOGIN: 'jojo78',
@@ -855,7 +855,7 @@ export default [
     ADRESS2: 'Milan78',
     PASSANGER_NAME: 'Jojo Bean78',
     CREDIT_CARD: 123123198,
-    EXP_DATE: '01.25',
+    EXP_DATE: '01/25',
   },
   {
     LOGIN: 'jojo79',
@@ -866,7 +866,7 @@ export default [
     ADRESS2: 'Milan79',
     PASSANGER_NAME: 'Jojo Bean79',
     CREDIT_CARD: 123123199,
-    EXP_DATE: '01.25',
+    EXP_DATE: '01/25',
   },
   {
     LOGIN: 'jojo80',
@@ -877,7 +877,7 @@ export default [
     ADRESS2: 'Milan80',
     PASSANGER_NAME: 'Jojo Bean80',
     CREDIT_CARD: 123123200,
-    EXP_DATE: '01.25',
+    EXP_DATE: '01/25',
   },
   {
     LOGIN: 'jojo81',
@@ -888,7 +888,7 @@ export default [
     ADRESS2: 'Milan81',
     PASSANGER_NAME: 'Jojo Bean81',
     CREDIT_CARD: 123123201,
-    EXP_DATE: '01.25',
+    EXP_DATE: '01/25',
   },
   {
     LOGIN: 'jojo82',
@@ -899,7 +899,7 @@ export default [
     ADRESS2: 'Milan82',
     PASSANGER_NAME: 'Jojo Bean82',
     CREDIT_CARD: 123123202,
-    EXP_DATE: '01.25',
+    EXP_DATE: '01/25',
   },
   {
     LOGIN: 'jojo83',
@@ -910,7 +910,7 @@ export default [
     ADRESS2: 'Milan83',
     PASSANGER_NAME: 'Jojo Bean83',
     CREDIT_CARD: 123123203,
-    EXP_DATE: '01.25',
+    EXP_DATE: '01/25',
   },
   {
     LOGIN: 'jojo84',
@@ -921,7 +921,7 @@ export default [
     ADRESS2: 'Milan84',
     PASSANGER_NAME: 'Jojo Bean84',
     CREDIT_CARD: 123123204,
-    EXP_DATE: '01.25',
+    EXP_DATE: '01/25',
   },
   {
     LOGIN: 'jojo85',
@@ -932,7 +932,7 @@ export default [
     ADRESS2: 'Milan85',
     PASSANGER_NAME: 'Jojo Bean85',
     CREDIT_CARD: 123123205,
-    EXP_DATE: '01.25',
+    EXP_DATE: '01/25',
   },
   {
     LOGIN: 'jojo86',
@@ -943,7 +943,7 @@ export default [
     ADRESS2: 'Milan86',
     PASSANGER_NAME: 'Jojo Bean86',
     CREDIT_CARD: 123123206,
-    EXP_DATE: '01.25',
+    EXP_DATE: '01/25',
   },
   {
     LOGIN: 'jojo87',
@@ -954,7 +954,7 @@ export default [
     ADRESS2: 'Milan87',
     PASSANGER_NAME: 'Jojo Bean87',
     CREDIT_CARD: 123123207,
-    EXP_DATE: '01.25',
+    EXP_DATE: '01/25',
   },
   {
     LOGIN: 'jojo88',
@@ -965,7 +965,7 @@ export default [
     ADRESS2: 'Milan88',
     PASSANGER_NAME: 'Jojo Bean88',
     CREDIT_CARD: 123123208,
-    EXP_DATE: '01.25',
+    EXP_DATE: '01/25',
   },
   {
     LOGIN: 'jojo89',
@@ -976,7 +976,7 @@ export default [
     ADRESS2: 'Milan89',
     PASSANGER_NAME: 'Jojo Bean89',
     CREDIT_CARD: 123123209,
-    EXP_DATE: '01.25',
+    EXP_DATE: '01/25',
   },
   {
     LOGIN: 'jojo90',
@@ -987,7 +987,7 @@ export default [
     ADRESS2: 'Milan90',
     PASSANGER_NAME: 'Jojo Bean90',
     CREDIT_CARD: 123123210,
-    EXP_DATE: '01.25',
+    EXP_DATE: '01/25',
   },
   {
     LOGIN: 'jojo91',
@@ -998,7 +998,7 @@ export default [
     ADRESS2: 'Milan91',
     PASSANGER_NAME: 'Jojo Bean91',
     CREDIT_CARD: 123123211,
-    EXP_DATE: '01.25',
+    EXP_DATE: '01/25',
   },
   {
     LOGIN: 'jojo92',
@@ -1009,7 +1009,7 @@ export default [
     ADRESS2: 'Milan92',
     PASSANGER_NAME: 'Jojo Bean92',
     CREDIT_CARD: 123123212,
-    EXP_DATE: '01.25',
+    EXP_DATE: '01/25',
   },
   {
     LOGIN: 'jojo93',
@@ -1020,7 +1020,7 @@ export default [
     ADRESS2: 'Milan93',
     PASSANGER_NAME: 'Jojo Bean93',
     CREDIT_CARD: 123123213,
-    EXP_DATE: '01.25',
+    EXP_DATE: '01/25',
   },
   {
     LOGIN: 'jojo94',
@@ -1031,7 +1031,7 @@ export default [
     ADRESS2: 'Milan94',
     PASSANGER_NAME: 'Jojo Bean94',
     CREDIT_CARD: 123123214,
-    EXP_DATE: '01.25',
+    EXP_DATE: '01/25',
   },
   {
     LOGIN: 'jojo95',
@@ -1042,7 +1042,7 @@ export default [
     ADRESS2: 'Milan95',
     PASSANGER_NAME: 'Jojo Bean95',
     CREDIT_CARD: 123123215,
-    EXP_DATE: '01.25',
+    EXP_DATE: '01/25',
   },
   {
     LOGIN: 'jojo96',
@@ -1053,7 +1053,7 @@ export default [
     ADRESS2: 'Milan96',
     PASSANGER_NAME: 'Jojo Bean96',
     CREDIT_CARD: 123123216,
-    EXP_DATE: '01.25',
+    EXP_DATE: '01/25',
   },
   {
     LOGIN: 'jojo97',
@@ -1064,7 +1064,7 @@ export default [
     ADRESS2: 'Milan97',
     PASSANGER_NAME: 'Jojo Bean97',
     CREDIT_CARD: 123123217,
-    EXP_DATE: '01.25',
+    EXP_DATE: '01/25',
   },
   {
     LOGIN: 'jojo98',
@@ -1075,7 +1075,7 @@ export default [
     ADRESS2: 'Milan98',
     PASSANGER_NAME: 'Jojo Bean98',
     CREDIT_CARD: 123123218,
-    EXP_DATE: '01.25',
+    EXP_DATE: '01/25',
   },
   {
     LOGIN: 'jojo99',
@@ -1086,7 +1086,7 @@ export default [
     ADRESS2: 'Milan99',
     PASSANGER_NAME: 'Jojo Bean99',
     CREDIT_CARD: 123123219,
-    EXP_DATE: '01.25',
+    EXP_DATE: '01/25',
   },
   {
     LOGIN: 'jojo100',
@@ -1097,7 +1097,7 @@ export default [
     ADRESS2: 'Milan100',
     PASSANGER_NAME: 'Jojo Bean100',
     CREDIT_CARD: 123123220,
-    EXP_DATE: '01.25',
+    EXP_DATE: '01/25',
   },
   {
     LOGIN: 'jojo101',
@@ -1108,7 +1108,7 @@ export default [
     ADRESS2: 'Milan101',
     PASSANGER_NAME: 'Jojo Bean101',
     CREDIT_CARD: 123123221,
-    EXP_DATE: '01.25',
+    EXP_DATE: '01/25',
   },
   {
     LOGIN: 'jojo102',
@@ -1119,7 +1119,7 @@ export default [
     ADRESS2: 'Milan102',
     PASSANGER_NAME: 'Jojo Bean102',
     CREDIT_CARD: 123123222,
-    EXP_DATE: '01.25',
+    EXP_DATE: '01/25',
   },
   {
     LOGIN: 'jojo103',
@@ -1130,7 +1130,7 @@ export default [
     ADRESS2: 'Milan103',
     PASSANGER_NAME: 'Jojo Bean103',
     CREDIT_CARD: 123123223,
-    EXP_DATE: '01.25',
+    EXP_DATE: '01/25',
   },
   {
     LOGIN: 'jojo104',
@@ -1141,7 +1141,7 @@ export default [
     ADRESS2: 'Milan104',
     PASSANGER_NAME: 'Jojo Bean104',
     CREDIT_CARD: 123123224,
-    EXP_DATE: '01.25',
+    EXP_DATE: '01/25',
   },
   {
     LOGIN: 'jojo105',
@@ -1152,7 +1152,7 @@ export default [
     ADRESS2: 'Milan105',
     PASSANGER_NAME: 'Jojo Bean105',
     CREDIT_CARD: 123123225,
-    EXP_DATE: '01.25',
+    EXP_DATE: '01/25',
   },
   {
     LOGIN: 'jojo106',
@@ -1163,7 +1163,7 @@ export default [
     ADRESS2: 'Milan106',
     PASSANGER_NAME: 'Jojo Bean106',
     CREDIT_CARD: 123123226,
-    EXP_DATE: '01.25',
+    EXP_DATE: '01/25',
   },
   {
     LOGIN: 'jojo107',
@@ -1174,7 +1174,7 @@ export default [
     ADRESS2: 'Milan107',
     PASSANGER_NAME: 'Jojo Bean107',
     CREDIT_CARD: 123123227,
-    EXP_DATE: '01.25',
+    EXP_DATE: '01/25',
   },
   {
     LOGIN: 'jojo108',
@@ -1185,7 +1185,7 @@ export default [
     ADRESS2: 'Milan108',
     PASSANGER_NAME: 'Jojo Bean108',
     CREDIT_CARD: 123123228,
-    EXP_DATE: '01.25',
+    EXP_DATE: '01/25',
   },
   {
     LOGIN: 'jojo109',
@@ -1196,7 +1196,7 @@ export default [
     ADRESS2: 'Milan109',
     PASSANGER_NAME: 'Jojo Bean109',
     CREDIT_CARD: 123123229,
-    EXP_DATE: '01.25',
+    EXP_DATE: '01/25',
   },
   {
     LOGIN: 'jojo110',
@@ -1207,7 +1207,7 @@ export default [
     ADRESS2: 'Milan110',
     PASSANGER_NAME: 'Jojo Bean110',
     CREDIT_CARD: 123123230,
-    EXP_DATE: '01.25',
+    EXP_DATE: '01/25',
   },
   {
     LOGIN: 'jojo111',
@@ -1218,7 +1218,7 @@ export default [
     ADRESS2: 'Milan111',
     PASSANGER_NAME: 'Jojo Bean111',
     CREDIT_CARD: 123123231,
-    EXP_DATE: '01.25',
+    EXP_DATE: '01/25',
   },
   {
     LOGIN: 'jojo112',
@@ -1229,7 +1229,7 @@ export default [
     ADRESS2: 'Milan112',
     PASSANGER_NAME: 'Jojo Bean112',
     CREDIT_CARD: 123123232,
-    EXP_DATE: '01.25',
+    EXP_DATE: '01/25',
   },
   {
     LOGIN: 'jojo113',
@@ -1240,7 +1240,7 @@ export default [
     ADRESS2: 'Milan113',
     PASSANGER_NAME: 'Jojo Bean113',
     CREDIT_CARD: 123123233,
-    EXP_DATE: '01.25',
+    EXP_DATE: '01/25',
   },
   {
     LOGIN: 'jojo114',
@@ -1251,7 +1251,7 @@ export default [
     ADRESS2: 'Milan114',
     PASSANGER_NAME: 'Jojo Bean114',
     CREDIT_CARD: 123123234,
-    EXP_DATE: '01.25',
+    EXP_DATE: '01/25',
   },
   {
     LOGIN: 'jojo115',
@@ -1262,7 +1262,7 @@ export default [
     ADRESS2: 'Milan115',
     PASSANGER_NAME: 'Jojo Bean115',
     CREDIT_CARD: 123123235,
-    EXP_DATE: '01.25',
+    EXP_DATE: '01/25',
   },
   {
     LOGIN: 'jojo116',
@@ -1273,7 +1273,7 @@ export default [
     ADRESS2: 'Milan116',
     PASSANGER_NAME: 'Jojo Bean116',
     CREDIT_CARD: 123123236,
-    EXP_DATE: '01.25',
+    EXP_DATE: '01/25',
   },
   {
     LOGIN: 'jojo117',
@@ -1284,7 +1284,7 @@ export default [
     ADRESS2: 'Milan117',
     PASSANGER_NAME: 'Jojo Bean117',
     CREDIT_CARD: 123123237,
-    EXP_DATE: '01.25',
+    EXP_DATE: '01/25',
   },
   {
     LOGIN: 'jojo118',
@@ -1295,7 +1295,7 @@ export default [
     ADRESS2: 'Milan118',
     PASSANGER_NAME: 'Jojo Bean118',
     CREDIT_CARD: 123123238,
-    EXP_DATE: '01.25',
+    EXP_DATE: '01/25',
   },
   {
     LOGIN: 'jojo119',
@@ -1306,7 +1306,7 @@ export default [
     ADRESS2: 'Milan119',
     PASSANGER_NAME: 'Jojo Bean119',
     CREDIT_CARD: 123123239,
-    EXP_DATE: '01.25',
+    EXP_DATE: '01/25',
   },
   {
     LOGIN: 'jojo120',
@@ -1317,7 +1317,7 @@ export default [
     ADRESS2: 'Milan120',
     PASSANGER_NAME: 'Jojo Bean120',
     CREDIT_CARD: 123123240,
-    EXP_DATE: '01.25',
+    EXP_DATE: '01/25',
   },
   {
     LOGIN: 'jojo121',
@@ -1328,7 +1328,7 @@ export default [
     ADRESS2: 'Milan121',
     PASSANGER_NAME: 'Jojo Bean121',
     CREDIT_CARD: 123123241,
-    EXP_DATE: '01.25',
+    EXP_DATE: '01/25',
   },
   {
     LOGIN: 'jojo122',
@@ -1339,7 +1339,7 @@ export default [
     ADRESS2: 'Milan122',
     PASSANGER_NAME: 'Jojo Bean122',
     CREDIT_CARD: 123123242,
-    EXP_DATE: '01.25',
+    EXP_DATE: '01/25',
   },
   {
     LOGIN: 'jojo123',
@@ -1350,7 +1350,7 @@ export default [
     ADRESS2: 'Milan123',
     PASSANGER_NAME: 'Jojo Bean123',
     CREDIT_CARD: 123123243,
-    EXP_DATE: '01.25',
+    EXP_DATE: '01/25',
   },
   {
     LOGIN: 'jojo124',
@@ -1361,7 +1361,7 @@ export default [
     ADRESS2: 'Milan124',
     PASSANGER_NAME: 'Jojo Bean124',
     CREDIT_CARD: 123123244,
-    EXP_DATE: '01.25',
+    EXP_DATE: '01/25',
   },
   {
     LOGIN: 'jojo125',
@@ -1372,7 +1372,7 @@ export default [
     ADRESS2: 'Milan125',
     PASSANGER_NAME: 'Jojo Bean125',
     CREDIT_CARD: 123123245,
-    EXP_DATE: '01.25',
+    EXP_DATE: '01/25',
   },
   {
     LOGIN: 'jojo126',
@@ -1383,7 +1383,7 @@ export default [
     ADRESS2: 'Milan126',
     PASSANGER_NAME: 'Jojo Bean126',
     CREDIT_CARD: 123123246,
-    EXP_DATE: '01.25',
+    EXP_DATE: '01/25',
   },
   {
     LOGIN: 'jojo127',
@@ -1394,7 +1394,7 @@ export default [
     ADRESS2: 'Milan127',
     PASSANGER_NAME: 'Jojo Bean127',
     CREDIT_CARD: 123123247,
-    EXP_DATE: '01.25',
+    EXP_DATE: '01/25',
   },
   {
     LOGIN: 'jojo128',
@@ -1405,7 +1405,7 @@ export default [
     ADRESS2: 'Milan128',
     PASSANGER_NAME: 'Jojo Bean128',
     CREDIT_CARD: 123123248,
-    EXP_DATE: '01.25',
+    EXP_DATE: '01/25',
   },
   {
     LOGIN: 'jojo129',
@@ -1416,7 +1416,7 @@ export default [
     ADRESS2: 'Milan129',
     PASSANGER_NAME: 'Jojo Bean129',
     CREDIT_CARD: 123123249,
-    EXP_DATE: '01.25',
+    EXP_DATE: '01/25',
   },
   {
     LOGIN: 'jojo130',
@@ -1427,7 +1427,7 @@ export default [
     ADRESS2: 'Milan130',
     PASSANGER_NAME: 'Jojo Bean130',
     CREDIT_CARD: 123123250,
-    EXP_DATE: '01.25',
+    EXP_DATE: '01/25',
   },
   {
     LOGIN: 'jojo131',
@@ -1438,7 +1438,7 @@ export default [
     ADRESS2: 'Milan131',
     PASSANGER_NAME: 'Jojo Bean131',
     CREDIT_CARD: 123123251,
-    EXP_DATE: '01.25',
+    EXP_DATE: '01/25',
   },
   {
     LOGIN: 'jojo132',
@@ -1449,7 +1449,7 @@ export default [
     ADRESS2: 'Milan132',
     PASSANGER_NAME: 'Jojo Bean132',
     CREDIT_CARD: 123123252,
-    EXP_DATE: '01.25',
+    EXP_DATE: '01/25',
   },
   {
     LOGIN: 'jojo133',
@@ -1460,7 +1460,7 @@ export default [
     ADRESS2: 'Milan133',
     PASSANGER_NAME: 'Jojo Bean133',
     CREDIT_CARD: 123123253,
-    EXP_DATE: '01.25',
+    EXP_DATE: '01/25',
   },
   {
     LOGIN: 'jojo134',
@@ -1471,7 +1471,7 @@ export default [
     ADRESS2: 'Milan134',
     PASSANGER_NAME: 'Jojo Bean134',
     CREDIT_CARD: 123123254,
-    EXP_DATE: '01.25',
+    EXP_DATE: '01/25',
   },
   {
     LOGIN: 'jojo135',
@@ -1482,7 +1482,7 @@ export default [
     ADRESS2: 'Milan135',
     PASSANGER_NAME: 'Jojo Bean135',
     CREDIT_CARD: 123123255,
-    EXP_DATE: '01.25',
+    EXP_DATE: '01/25',
   },
   {
     LOGIN: 'jojo136',
@@ -1493,7 +1493,7 @@ export default [
     ADRESS2: 'Milan136',
     PASSANGER_NAME: 'Jojo Bean136',
     CREDIT_CARD: 123123256,
-    EXP_DATE: '01.25',
+    EXP_DATE: '01/25',
   },
   {
     LOGIN: 'jojo137',
@@ -1504,7 +1504,7 @@ export default [
     ADRESS2: 'Milan137',
     PASSANGER_NAME: 'Jojo Bean137',
     CREDIT_CARD: 123123257,
-    EXP_DATE: '01.25',
+    EXP_DATE: '01/25',
   },
   {
     LOGIN: 'jojo138',
@@ -1515,7 +1515,7 @@ export default [
     ADRESS2: 'Milan138',
     PASSANGER_NAME: 'Jojo Bean138',
     CREDIT_CARD: 123123258,
-    EXP_DATE: '01.25',
+    EXP_DATE: '01/25',
   },
   {
     LOGIN: 'jojo139',
@@ -1526,7 +1526,7 @@ export default [
     ADRESS2: 'Milan139',
     PASSANGER_NAME: 'Jojo Bean139',
     CREDIT_CARD: 123123259,
-    EXP_DATE: '01.25',
+    EXP_DATE: '01/25',
   },
   {
     LOGIN: 'jojo140',
@@ -1537,7 +1537,7 @@ export default [
     ADRESS2: 'Milan140',
     PASSANGER_NAME: 'Jojo Bean140',
     CREDIT_CARD: 123123260,
-    EXP_DATE: '01.25',
+    EXP_DATE: '01/25',
   },
   {
     LOGIN: 'jojo141',
@@ -1548,7 +1548,7 @@ export default [
     ADRESS2: 'Milan141',
     PASSANGER_NAME: 'Jojo Bean141',
     CREDIT_CARD: 123123261,
-    EXP_DATE: '01.25',
+    EXP_DATE: '01/25',
   },
   {
     LOGIN: 'jojo142',
@@ -1559,7 +1559,7 @@ export default [
     ADRESS2: 'Milan142',
     PASSANGER_NAME: 'Jojo Bean142',
     CREDIT_CARD: 123123262,
-    EXP_DATE: '01.25',
+    EXP_DATE: '01/25',
   },
   {
     LOGIN: 'jojo143',
@@ -1570,7 +1570,7 @@ export default [
     ADRESS2: 'Milan143',
     PASSANGER_NAME: 'Jojo Bean143',
     CREDIT_CARD: 123123263,
-    EXP_DATE: '01.25',
+    EXP_DATE: '01/25',
   },
   {
     LOGIN: 'jojo144',
@@ -1581,7 +1581,7 @@ export default [
     ADRESS2: 'Milan144',
     PASSANGER_NAME: 'Jojo Bean144',
     CREDIT_CARD: 123123264,
-    EXP_DATE: '01.25',
+    EXP_DATE: '01/25',
   },
   {
     LOGIN: 'jojo145',
@@ -1592,7 +1592,7 @@ export default [
     ADRESS2: 'Milan145',
     PASSANGER_NAME: 'Jojo Bean145',
     CREDIT_CARD: 123123265,
-    EXP_DATE: '01.25',
+    EXP_DATE: '01/25',
   },
   {
     LOGIN: 'jojo146',
@@ -1603,7 +1603,7 @@ export default [
     ADRESS2: 'Milan146',
     PASSANGER_NAME: 'Jojo Bean146',
     CREDIT_CARD: 123123266,
-    EXP_DATE: '01.25',
+    EXP_DATE: '01/25',
   },
   {
     LOGIN: 'jojo147',
@@ -1614,7 +1614,7 @@ export default [
     ADRESS2: 'Milan147',
     PASSANGER_NAME: 'Jojo Bean147',
     CREDIT_CARD: 123123267,
-    EXP_DATE: '01.25',
+    EXP_DATE: '01/25',
   },
   {
     LOGIN: 'jojo148',
@@ -1625,7 +1625,7 @@ export default [
     ADRESS2: 'Milan148',
     PASSANGER_NAME: 'Jojo Bean148',
     CREDIT_CARD: 123123268,
-    EXP_DATE: '01.25',
+    EXP_DATE: '01/25',
   },
   {
     LOGIN: 'jojo149',
@@ -1636,7 +1636,7 @@ export default [
     ADRESS2: 'Milan149',
     PASSANGER_NAME: 'Jojo Bean149',
     CREDIT_CARD: 123123269,
-    EXP_DATE: '01.25',
+    EXP_DATE: '01/25',
   },
   {
     LOGIN: 'jojo150',
@@ -1647,7 +1647,7 @@ export default [
     ADRESS2: 'Milan150',
     PASSANGER_NAME: 'Jojo Bean150',
     CREDIT_CARD: 123123270,
-    EXP_DATE: '01.25',
+    EXP_DATE: '01/25',
   },
   {
     LOGIN: 'jojo151',
@@ -1658,7 +1658,7 @@ export default [
     ADRESS2: 'Milan151',
     PASSANGER_NAME: 'Jojo Bean151',
     CREDIT_CARD: 123123271,
-    EXP_DATE: '01.25',
+    EXP_DATE: '01/25',
   },
   {
     LOGIN: 'jojo152',
@@ -1669,7 +1669,7 @@ export default [
     ADRESS2: 'Milan152',
     PASSANGER_NAME: 'Jojo Bean152',
     CREDIT_CARD: 123123272,
-    EXP_DATE: '01.25',
+    EXP_DATE: '01/25',
   },
   {
     LOGIN: 'jojo153',
@@ -1680,7 +1680,7 @@ export default [
     ADRESS2: 'Milan153',
     PASSANGER_NAME: 'Jojo Bean153',
     CREDIT_CARD: 123123273,
-    EXP_DATE: '01.25',
+    EXP_DATE: '01/25',
   },
   {
     LOGIN: 'jojo154',
@@ -1691,7 +1691,7 @@ export default [
     ADRESS2: 'Milan154',
     PASSANGER_NAME: 'Jojo Bean154',
     CREDIT_CARD: 123123274,
-    EXP_DATE: '01.25',
+    EXP_DATE: '01/25',
   },
   {
     LOGIN: 'jojo155',
@@ -1702,7 +1702,7 @@ export default [
     ADRESS2: 'Milan155',
     PASSANGER_NAME: 'Jojo Bean155',
     CREDIT_CARD: 123123275,
-    EXP_DATE: '01.25',
+    EXP_DATE: '01/25',
   },
   {
     LOGIN: 'jojo156',
@@ -1713,7 +1713,7 @@ export default [
     ADRESS2: 'Milan156',
     PASSANGER_NAME: 'Jojo Bean156',
     CREDIT_CARD: 123123276,
-    EXP_DATE: '01.25',
+    EXP_DATE: '01/25',
   },
   {
     LOGIN: 'jojo157',
@@ -1724,7 +1724,7 @@ export default [
     ADRESS2: 'Milan157',
     PASSANGER_NAME: 'Jojo Bean157',
     CREDIT_CARD: 123123277,
-    EXP_DATE: '01.25',
+    EXP_DATE: '01/25',
   },
   {
     LOGIN: 'jojo158',
@@ -1735,7 +1735,7 @@ export default [
     ADRESS2: 'Milan158',
     PASSANGER_NAME: 'Jojo Bean158',
     CREDIT_CARD: 123123278,
-    EXP_DATE: '01.25',
+    EXP_DATE: '01/25',
   },
   {
     LOGIN: 'jojo159',
@@ -1746,7 +1746,7 @@ export default [
     ADRESS2: 'Milan159',
     PASSANGER_NAME: 'Jojo Bean159',
     CREDIT_CARD: 123123279,
-    EXP_DATE: '01.25',
+    EXP_DATE: '01/25',
   },
   {
     LOGIN: 'jojo160',
@@ -1757,7 +1757,7 @@ export default [
     ADRESS2: 'Milan160',
     PASSANGER_NAME: 'Jojo Bean160',
     CREDIT_CARD: 123123280,
-    EXP_DATE: '01.25',
+    EXP_DATE: '01/25',
   },
   {
     LOGIN: 'jojo161',
@@ -1768,7 +1768,7 @@ export default [
     ADRESS2: 'Milan161',
     PASSANGER_NAME: 'Jojo Bean161',
     CREDIT_CARD: 123123281,
-    EXP_DATE: '01.25',
+    EXP_DATE: '01/25',
   },
   {
     LOGIN: 'jojo162',
@@ -1779,7 +1779,7 @@ export default [
     ADRESS2: 'Milan162',
     PASSANGER_NAME: 'Jojo Bean162',
     CREDIT_CARD: 123123282,
-    EXP_DATE: '01.25',
+    EXP_DATE: '01/25',
   },
   {
     LOGIN: 'jojo163',
@@ -1790,7 +1790,7 @@ export default [
     ADRESS2: 'Milan163',
     PASSANGER_NAME: 'Jojo Bean163',
     CREDIT_CARD: 123123283,
-    EXP_DATE: '01.25',
+    EXP_DATE: '01/25',
   },
   {
     LOGIN: 'jojo164',
@@ -1801,7 +1801,7 @@ export default [
     ADRESS2: 'Milan164',
     PASSANGER_NAME: 'Jojo Bean164',
     CREDIT_CARD: 123123284,
-    EXP_DATE: '01.25',
+    EXP_DATE: '01/25',
   },
   {
     LOGIN: 'jojo165',
@@ -1812,7 +1812,7 @@ export default [
     ADRESS2: 'Milan165',
     PASSANGER_NAME: 'Jojo Bean165',
     CREDIT_CARD: 123123285,
-    EXP_DATE: '01.25',
+    EXP_DATE: '01/25',
   },
   {
     LOGIN: 'jojo166',
@@ -1823,7 +1823,7 @@ export default [
     ADRESS2: 'Milan166',
     PASSANGER_NAME: 'Jojo Bean166',
     CREDIT_CARD: 123123286,
-    EXP_DATE: '01.25',
+    EXP_DATE: '01/25',
   },
   {
     LOGIN: 'jojo167',
@@ -1834,7 +1834,7 @@ export default [
     ADRESS2: 'Milan167',
     PASSANGER_NAME: 'Jojo Bean167',
     CREDIT_CARD: 123123287,
-    EXP_DATE: '01.25',
+    EXP_DATE: '01/25',
   },
   {
     LOGIN: 'jojo168',
@@ -1845,7 +1845,7 @@ export default [
     ADRESS2: 'Milan168',
     PASSANGER_NAME: 'Jojo Bean168',
     CREDIT_CARD: 123123288,
-    EXP_DATE: '01.25',
+    EXP_DATE: '01/25',
   },
   {
     LOGIN: 'jojo169',
@@ -1856,7 +1856,7 @@ export default [
     ADRESS2: 'Milan169',
     PASSANGER_NAME: 'Jojo Bean169',
     CREDIT_CARD: 123123289,
-    EXP_DATE: '01.25',
+    EXP_DATE: '01/25',
   },
   {
     LOGIN: 'jojo170',
@@ -1867,7 +1867,7 @@ export default [
     ADRESS2: 'Milan170',
     PASSANGER_NAME: 'Jojo Bean170',
     CREDIT_CARD: 123123290,
-    EXP_DATE: '01.25',
+    EXP_DATE: '01/25',
   },
   {
     LOGIN: 'jojo171',
@@ -1878,7 +1878,7 @@ export default [
     ADRESS2: 'Milan171',
     PASSANGER_NAME: 'Jojo Bean171',
     CREDIT_CARD: 123123291,
-    EXP_DATE: '01.25',
+    EXP_DATE: '01/25',
   },
   {
     LOGIN: 'jojo172',
@@ -1889,7 +1889,7 @@ export default [
     ADRESS2: 'Milan172',
     PASSANGER_NAME: 'Jojo Bean172',
     CREDIT_CARD: 123123292,
-    EXP_DATE: '01.25',
+    EXP_DATE: '01/25',
   },
   {
     LOGIN: 'jojo173',
@@ -1900,7 +1900,7 @@ export default [
     ADRESS2: 'Milan173',
     PASSANGER_NAME: 'Jojo Bean173',
     CREDIT_CARD: 123123293,
-    EXP_DATE: '01.25',
+    EXP_DATE: '01/25',
   },
   {
     LOGIN: 'jojo174',
@@ -1911,7 +1911,7 @@ export default [
     ADRESS2: 'Milan174',
     PASSANGER_NAME: 'Jojo Bean174',
     CREDIT_CARD: 123123294,
-    EXP_DATE: '01.25',
+    EXP_DATE: '01/25',
   },
   {
     LOGIN: 'jojo175',
@@ -1922,7 +1922,7 @@ export default [
     ADRESS2: 'Milan175',
     PASSANGER_NAME: 'Jojo Bean175',
     CREDIT_CARD: 123123295,
-    EXP_DATE: '01.25',
+    EXP_DATE: '01/25',
   },
   {
     LOGIN: 'jojo176',
@@ -1933,7 +1933,7 @@ export default [
     ADRESS2: 'Milan176',
     PASSANGER_NAME: 'Jojo Bean176',
     CREDIT_CARD: 123123296,
-    EXP_DATE: '01.25',
+    EXP_DATE: '01/25',
   },
   {
     LOGIN: 'jojo177',
@@ -1944,7 +1944,7 @@ export default [
     ADRESS2: 'Milan177',
     PASSANGER_NAME: 'Jojo Bean177',
     CREDIT_CARD: 123123297,
-    EXP_DATE: '01.25',
+    EXP_DATE: '01/25',
   },
   {
     LOGIN: 'jojo178',
@@ -1955,7 +1955,7 @@ export default [
     ADRESS2: 'Milan178',
     PASSANGER_NAME: 'Jojo Bean178',
     CREDIT_CARD: 123123298,
-    EXP_DATE: '01.25',
+    EXP_DATE: '01/25',
   },
   {
     LOGIN: 'jojo179',
@@ -1966,7 +1966,7 @@ export default [
     ADRESS2: 'Milan179',
     PASSANGER_NAME: 'Jojo Bean179',
     CREDIT_CARD: 123123299,
-    EXP_DATE: '01.25',
+    EXP_DATE: '01/25',
   },
   {
     LOGIN: 'jojo180',
@@ -1977,7 +1977,7 @@ export default [
     ADRESS2: 'Milan180',
     PASSANGER_NAME: 'Jojo Bean180',
     CREDIT_CARD: 123123300,
-    EXP_DATE: '01.25',
+    EXP_DATE: '01/25',
   },
   {
     LOGIN: 'jojo181',
@@ -1988,7 +1988,7 @@ export default [
     ADRESS2: 'Milan181',
     PASSANGER_NAME: 'Jojo Bean181',
     CREDIT_CARD: 123123301,
-    EXP_DATE: '01.25',
+    EXP_DATE: '01/25',
   },
   {
     LOGIN: 'jojo182',
@@ -1999,7 +1999,7 @@ export default [
     ADRESS2: 'Milan182',
     PASSANGER_NAME: 'Jojo Bean182',
     CREDIT_CARD: 123123302,
-    EXP_DATE: '01.25',
+    EXP_DATE: '01/25',
   },
   {
     LOGIN: 'jojo183',
@@ -2010,7 +2010,7 @@ export default [
     ADRESS2: 'Milan183',
     PASSANGER_NAME: 'Jojo Bean183',
     CREDIT_CARD: 123123303,
-    EXP_DATE: '01.25',
+    EXP_DATE: '01/25',
   },
   {
     LOGIN: 'jojo184',
@@ -2021,7 +2021,7 @@ export default [
     ADRESS2: 'Milan184',
     PASSANGER_NAME: 'Jojo Bean184',
     CREDIT_CARD: 123123304,
-    EXP_DATE: '01.25',
+    EXP_DATE: '01/25',
   },
   {
     LOGIN: 'jojo185',
@@ -2032,7 +2032,7 @@ export default [
     ADRESS2: 'Milan185',
     PASSANGER_NAME: 'Jojo Bean185',
     CREDIT_CARD: 123123305,
-    EXP_DATE: '01.25',
+    EXP_DATE: '01/25',
   },
   {
     LOGIN: 'jojo186',
@@ -2043,7 +2043,7 @@ export default [
     ADRESS2: 'Milan186',
     PASSANGER_NAME: 'Jojo Bean186',
     CREDIT_CARD: 123123306,
-    EXP_DATE: '01.25',
+    EXP_DATE: '01/25',
   },
   {
     LOGIN: 'jojo187',
@@ -2054,7 +2054,7 @@ export default [
     ADRESS2: 'Milan187',
     PASSANGER_NAME: 'Jojo Bean187',
     CREDIT_CARD: 123123307,
-    EXP_DATE: '01.25',
+    EXP_DATE: '01/25',
   },
   {
     LOGIN: 'jojo188',
@@ -2065,7 +2065,7 @@ export default [
     ADRESS2: 'Milan188',
     PASSANGER_NAME: 'Jojo Bean188',
     CREDIT_CARD: 123123308,
-    EXP_DATE: '01.25',
+    EXP_DATE: '01/25',
   },
   {
     LOGIN: 'jojo189',
@@ -2076,7 +2076,7 @@ export default [
     ADRESS2: 'Milan189',
     PASSANGER_NAME: 'Jojo Bean189',
     CREDIT_CARD: 123123309,
-    EXP_DATE: '01.25',
+    EXP_DATE: '01/25',
   },
   {
     LOGIN: 'jojo190',
@@ -2087,7 +2087,7 @@ export default [
     ADRESS2: 'Milan190',
     PASSANGER_NAME: 'Jojo Bean190',
     CREDIT_CARD: 123123310,
-    EXP_DATE: '01.25',
+    EXP_DATE: '01/25',
   },
   {
     LOGIN: 'jojo191',
@@ -2098,7 +2098,7 @@ export default [
     ADRESS2: 'Milan191',
     PASSANGER_NAME: 'Jojo Bean191',
     CREDIT_CARD: 123123311,
-    EXP_DATE: '01.25',
+    EXP_DATE: '01/25',
   },
   {
     LOGIN: 'jojo192',
@@ -2109,7 +2109,7 @@ export default [
     ADRESS2: 'Milan192',
     PASSANGER_NAME: 'Jojo Bean192',
     CREDIT_CARD: 123123312,
-    EXP_DATE: '01.25',
+    EXP_DATE: '01/25',
   },
   {
     LOGIN: 'jojo193',
@@ -2120,7 +2120,7 @@ export default [
     ADRESS2: 'Milan193',
     PASSANGER_NAME: 'Jojo Bean193',
     CREDIT_CARD: 123123313,
-    EXP_DATE: '01.25',
+    EXP_DATE: '01/25',
   },
   {
     LOGIN: 'jojo194',
@@ -2131,7 +2131,7 @@ export default [
     ADRESS2: 'Milan194',
     PASSANGER_NAME: 'Jojo Bean194',
     CREDIT_CARD: 123123314,
-    EXP_DATE: '01.25',
+    EXP_DATE: '01/25',
   },
   {
     LOGIN: 'jojo195',
@@ -2142,7 +2142,7 @@ export default [
     ADRESS2: 'Milan195',
     PASSANGER_NAME: 'Jojo Bean195',
     CREDIT_CARD: 123123315,
-    EXP_DATE: '01.25',
+    EXP_DATE: '01/25',
   },
   {
     LOGIN: 'jojo196',
@@ -2153,7 +2153,7 @@ export default [
     ADRESS2: 'Milan196',
     PASSANGER_NAME: 'Jojo Bean196',
     CREDIT_CARD: 123123316,
-    EXP_DATE: '01.25',
+    EXP_DATE: '01/25',
   },
   {
     LOGIN: 'jojo197',
@@ -2164,7 +2164,7 @@ export default [
     ADRESS2: 'Milan197',
     PASSANGER_NAME: 'Jojo Bean197',
     CREDIT_CARD: 123123317,
-    EXP_DATE: '01.25',
+    EXP_DATE: '01/25',
   },
   {
     LOGIN: 'jojo198',
@@ -2175,7 +2175,7 @@ export default [
     ADRESS2: 'Milan198',
     PASSANGER_NAME: 'Jojo Bean198',
     CREDIT_CARD: 123123318,
-    EXP_DATE: '01.25',
+    EXP_DATE: '01/25',
   },
   {
     LOGIN: 'jojo199',
@@ -2186,7 +2186,7 @@ export default [
     ADRESS2: 'Milan199',
     PASSANGER_NAME: 'Jojo Bean199',
     CREDIT_CARD: 123123319,
-    EXP_DATE: '01.25',
+    EXP_DATE: '01/25',
   },
   {
     LOGIN: 'jojo200',
@@ -2197,7 +2197,7 @@ export default [
     ADRESS2: 'Milan200',
     PASSANGER_NAME: 'Jojo Bean200',
     CREDIT_CARD: 123123320,
-    EXP_DATE: '01.25',
+    EXP_DATE: '01/25',
   },
   {
     LOGIN: 'jojo201',
@@ -2208,7 +2208,7 @@ export default [
     ADRESS2: 'Milan201',
     PASSANGER_NAME: 'Jojo Bean201',
     CREDIT_CARD: 123123321,
-    EXP_DATE: '01.25',
+    EXP_DATE: '01/25',
   },
   {
     LOGIN: 'jojo202',
@@ -2219,7 +2219,7 @@ export default [
     ADRESS2: 'Milan202',
     PASSANGER_NAME: 'Jojo Bean202',
     CREDIT_CARD: 123123322,
-    EXP_DATE: '01.25',
+    EXP_DATE: '01/25',
   },
   {
     LOGIN: 'jojo203',
@@ -2230,7 +2230,7 @@ export default [
     ADRESS2: 'Milan203',
     PASSANGER_NAME: 'Jojo Bean203',
     CREDIT_CARD: 123123323,
-    EXP_DATE: '01.25',
+    EXP_DATE: '01/25',
   },
   {
     LOGIN: 'jojo204',
@@ -2241,7 +2241,7 @@ export default [
     ADRESS2: 'Milan204',
     PASSANGER_NAME: 'Jojo Bean204',
     CREDIT_CARD: 123123324,
-    EXP_DATE: '01.25',
+    EXP_DATE: '01/25',
   },
   {
     LOGIN: 'jojo205',
@@ -2252,7 +2252,7 @@ export default [
     ADRESS2: 'Milan205',
     PASSANGER_NAME: 'Jojo Bean205',
     CREDIT_CARD: 123123325,
-    EXP_DATE: '01.25',
+    EXP_DATE: '01/25',
   },
   {
     LOGIN: 'jojo206',
@@ -2263,7 +2263,7 @@ export default [
     ADRESS2: 'Milan206',
     PASSANGER_NAME: 'Jojo Bean206',
     CREDIT_CARD: 123123326,
-    EXP_DATE: '01.25',
+    EXP_DATE: '01/25',
   },
   {
     LOGIN: 'jojo207',
@@ -2274,7 +2274,7 @@ export default [
     ADRESS2: 'Milan207',
     PASSANGER_NAME: 'Jojo Bean207',
     CREDIT_CARD: 123123327,
-    EXP_DATE: '01.25',
+    EXP_DATE: '01/25',
   },
   {
     LOGIN: 'jojo208',
@@ -2285,7 +2285,7 @@ export default [
     ADRESS2: 'Milan208',
     PASSANGER_NAME: 'Jojo Bean208',
     CREDIT_CARD: 123123328,
-    EXP_DATE: '01.25',
+    EXP_DATE: '01/25',
   },
   {
     LOGIN: 'jojo209',
@@ -2296,7 +2296,7 @@ export default [
     ADRESS2: 'Milan209',
     PASSANGER_NAME: 'Jojo Bean209',
     CREDIT_CARD: 123123329,
-    EXP_DATE: '01.25',
+    EXP_DATE: '01/25',
   },
   {
     LOGIN: 'jojo210',
@@ -2307,7 +2307,7 @@ export default [
     ADRESS2: 'Milan210',
     PASSANGER_NAME: 'Jojo Bean210',
     CREDIT_CARD: 123123330,
-    EXP_DATE: '01.25',
+    EXP_DATE: '01/25',
   },
   {
     LOGIN: 'jojo211',
@@ -2318,7 +2318,7 @@ export default [
     ADRESS2: 'Milan211',
     PASSANGER_NAME: 'Jojo Bean211',
     CREDIT_CARD: 123123331,
-    EXP_DATE: '01.25',
+    EXP_DATE: '01/25',
   },
   {
     LOGIN: 'jojo212',
@@ -2329,7 +2329,7 @@ export default [
     ADRESS2: 'Milan212',
     PASSANGER_NAME: 'Jojo Bean212',
     CREDIT_CARD: 123123332,
-    EXP_DATE: '01.25',
+    EXP_DATE: '01/25',
   },
   {
     LOGIN: 'jojo213',
@@ -2340,7 +2340,7 @@ export default [
     ADRESS2: 'Milan213',
     PASSANGER_NAME: 'Jojo Bean213',
     CREDIT_CARD: 123123333,
-    EXP_DATE: '01.25',
+    EXP_DATE: '01/25',
   },
   {
     LOGIN: 'jojo214',
@@ -2351,7 +2351,7 @@ export default [
     ADRESS2: 'Milan214',
     PASSANGER_NAME: 'Jojo Bean214',
     CREDIT_CARD: 123123334,
-    EXP_DATE: '01.25',
+    EXP_DATE: '01/25',
   },
   {
     LOGIN: 'jojo215',
@@ -2362,7 +2362,7 @@ export default [
     ADRESS2: 'Milan215',
     PASSANGER_NAME: 'Jojo Bean215',
     CREDIT_CARD: 123123335,
-    EXP_DATE: '01.25',
+    EXP_DATE: '01/25',
   },
   {
     LOGIN: 'jojo216',
@@ -2373,7 +2373,7 @@ export default [
     ADRESS2: 'Milan216',
     PASSANGER_NAME: 'Jojo Bean216',
     CREDIT_CARD: 123123336,
-    EXP_DATE: '01.25',
+    EXP_DATE: '01/25',
   },
   {
     LOGIN: 'jojo217',
@@ -2384,7 +2384,7 @@ export default [
     ADRESS2: 'Milan217',
     PASSANGER_NAME: 'Jojo Bean217',
     CREDIT_CARD: 123123337,
-    EXP_DATE: '01.25',
+    EXP_DATE: '01/25',
   },
   {
     LOGIN: 'jojo218',
@@ -2395,7 +2395,7 @@ export default [
     ADRESS2: 'Milan218',
     PASSANGER_NAME: 'Jojo Bean218',
     CREDIT_CARD: 123123338,
-    EXP_DATE: '01.25',
+    EXP_DATE: '01/25',
   },
   {
     LOGIN: 'jojo219',
@@ -2406,7 +2406,7 @@ export default [
     ADRESS2: 'Milan219',
     PASSANGER_NAME: 'Jojo Bean219',
     CREDIT_CARD: 123123339,
-    EXP_DATE: '01.25',
+    EXP_DATE: '01/25',
   },
   {
     LOGIN: 'jojo220',
@@ -2417,7 +2417,7 @@ export default [
     ADRESS2: 'Milan220',
     PASSANGER_NAME: 'Jojo Bean220',
     CREDIT_CARD: 123123340,
-    EXP_DATE: '01.25',
+    EXP_DATE: '01/25',
   },
   {
     LOGIN: 'jojo221',
@@ -2428,7 +2428,7 @@ export default [
     ADRESS2: 'Milan221',
     PASSANGER_NAME: 'Jojo Bean221',
     CREDIT_CARD: 123123341,
-    EXP_DATE: '01.25',
+    EXP_DATE: '01/25',
   },
   {
     LOGIN: 'jojo222',
@@ -2439,7 +2439,7 @@ export default [
     ADRESS2: 'Milan222',
     PASSANGER_NAME: 'Jojo Bean222',
     CREDIT_CARD: 123123342,
-    EXP_DATE: '01.25',
+    EXP_DATE: '01/25',
   },
   {
     LOGIN: 'jojo223',
@@ -2450,7 +2450,7 @@ export default [
     ADRESS2: 'Milan223',
     PASSANGER_NAME: 'Jojo Bean223',
     CREDIT_CARD: 123123343,
-    EXP_DATE: '01.25',
+    EXP_DATE: '01/25',
   },
   {
     LOGIN: 'jojo224',
@@ -2461,7 +2461,7 @@ export default [
     ADRESS2: 'Milan224',
     PASSANGER_NAME: 'Jojo Bean224',
     CREDIT_CARD: 123123344,
-    EXP_DATE: '01.25',
+    EXP_DATE: '01/25',
   },
   {
     LOGIN: 'jojo225',
@@ -2472,7 +2472,7 @@ export default [
     ADRESS2: 'Milan225',
     PASSANGER_NAME: 'Jojo Bean225',
     CREDIT_CARD: 123123345,
-    EXP_DATE: '01.25',
+    EXP_DATE: '01/25',
   },
   {
     LOGIN: 'jojo226',
@@ -2483,7 +2483,7 @@ export default [
     ADRESS2: 'Milan226',
     PASSANGER_NAME: 'Jojo Bean226',
     CREDIT_CARD: 123123346,
-    EXP_DATE: '01.25',
+    EXP_DATE: '01/25',
   },
   {
     LOGIN: 'jojo227',
@@ -2494,7 +2494,7 @@ export default [
     ADRESS2: 'Milan227',
     PASSANGER_NAME: 'Jojo Bean227',
     CREDIT_CARD: 123123347,
-    EXP_DATE: '01.25',
+    EXP_DATE: '01/25',
   },
   {
     LOGIN: 'jojo228',
@@ -2505,7 +2505,7 @@ export default [
     ADRESS2: 'Milan228',
     PASSANGER_NAME: 'Jojo Bean228',
     CREDIT_CARD: 123123348,
-    EXP_DATE: '01.25',
+    EXP_DATE: '01/25',
   },
   {
     LOGIN: 'jojo229',
@@ -2516,7 +2516,7 @@ export default [
     ADRESS2: 'Milan229',
     PASSANGER_NAME: 'Jojo Bean229',
     CREDIT_CARD: 123123349,
-    EXP_DATE: '01.25',
+    EXP_DATE: '01/25',
   },
   {
     LOGIN: 'jojo230',
@@ -2527,7 +2527,7 @@ export default [
     ADRESS2: 'Milan230',
     PASSANGER_NAME: 'Jojo Bean230',
     CREDIT_CARD: 123123350,
-    EXP_DATE: '01.25',
+    EXP_DATE: '01/25',
   },
   {
     LOGIN: 'jojo231',
@@ -2538,7 +2538,7 @@ export default [
     ADRESS2: 'Milan231',
     PASSANGER_NAME: 'Jojo Bean231',
     CREDIT_CARD: 123123351,
-    EXP_DATE: '01.25',
+    EXP_DATE: '01/25',
   },
   {
     LOGIN: 'jojo232',
@@ -2549,7 +2549,7 @@ export default [
     ADRESS2: 'Milan232',
     PASSANGER_NAME: 'Jojo Bean232',
     CREDIT_CARD: 123123352,
-    EXP_DATE: '01.25',
+    EXP_DATE: '01/25',
   },
   {
     LOGIN: 'jojo233',
@@ -2560,7 +2560,7 @@ export default [
     ADRESS2: 'Milan233',
     PASSANGER_NAME: 'Jojo Bean233',
     CREDIT_CARD: 123123353,
-    EXP_DATE: '01.25',
+    EXP_DATE: '01/25',
   },
   {
     LOGIN: 'jojo234',
@@ -2571,7 +2571,7 @@ export default [
     ADRESS2: 'Milan234',
     PASSANGER_NAME: 'Jojo Bean234',
     CREDIT_CARD: 123123354,
-    EXP_DATE: '01.25',
+    EXP_DATE: '01/25',
   },
   {
     LOGIN: 'jojo235',
@@ -2582,7 +2582,7 @@ export default [
     ADRESS2: 'Milan235',
     PASSANGER_NAME: 'Jojo Bean235',
     CREDIT_CARD: 123123355,
-    EXP_DATE: '01.25',
+    EXP_DATE: '01/25',
   },
   {
     LOGIN: 'jojo236',
@@ -2593,7 +2593,7 @@ export default [
     ADRESS2: 'Milan236',
     PASSANGER_NAME: 'Jojo Bean236',
     CREDIT_CARD: 123123356,
-    EXP_DATE: '01.25',
+    EXP_DATE: '01/25',
   },
   {
     LOGIN: 'jojo237',
@@ -2604,7 +2604,7 @@ export default [
     ADRESS2: 'Milan237',
     PASSANGER_NAME: 'Jojo Bean237',
     CREDIT_CARD: 123123357,
-    EXP_DATE: '01.25',
+    EXP_DATE: '01/25',
   },
   {
     LOGIN: 'jojo238',
@@ -2615,7 +2615,7 @@ export default [
     ADRESS2: 'Milan238',
     PASSANGER_NAME: 'Jojo Bean238',
     CREDIT_CARD: 123123358,
-    EXP_DATE: '01.25',
+    EXP_DATE: '01/25',
   },
   {
     LOGIN: 'jojo239',
@@ -2626,7 +2626,7 @@ export default [
     ADRESS2: 'Milan239',
     PASSANGER_NAME: 'Jojo Bean239',
     CREDIT_CARD: 123123359,
-    EXP_DATE: '01.25',
+    EXP_DATE: '01/25',
   },
   {
     LOGIN: 'jojo240',
@@ -2637,7 +2637,7 @@ export default [
     ADRESS2: 'Milan240',
     PASSANGER_NAME: 'Jojo Bean240',
     CREDIT_CARD: 123123360,
-    EXP_DATE: '01.25',
+    EXP_DATE: '01/25',
   },
   {
     LOGIN: 'jojo241',
@@ -2648,7 +2648,7 @@ export default [
     ADRESS2: 'Milan241',
     PASSANGER_NAME: 'Jojo Bean241',
     CREDIT_CARD: 123123361,
-    EXP_DATE: '01.25',
+    EXP_DATE: '01/25',
   },
   {
     LOGIN: 'jojo242',
@@ -2659,7 +2659,7 @@ export default [
     ADRESS2: 'Milan242',
     PASSANGER_NAME: 'Jojo Bean242',
     CREDIT_CARD: 123123362,
-    EXP_DATE: '01.25',
+    EXP_DATE: '01/25',
   },
   {
     LOGIN: 'jojo243',
@@ -2670,7 +2670,7 @@ export default [
     ADRESS2: 'Milan243',
     PASSANGER_NAME: 'Jojo Bean243',
     CREDIT_CARD: 123123363,
-    EXP_DATE: '01.25',
+    EXP_DATE: '01/25',
   },
   {
     LOGIN: 'jojo244',
@@ -2681,7 +2681,7 @@ export default [
     ADRESS2: 'Milan244',
     PASSANGER_NAME: 'Jojo Bean244',
     CREDIT_CARD: 123123364,
-    EXP_DATE: '01.25',
+    EXP_DATE: '01/25',
   },
   {
     LOGIN: 'jojo245',
@@ -2692,7 +2692,7 @@ export default [
     ADRESS2: 'Milan245',
     PASSANGER_NAME: 'Jojo Bean245',
     CREDIT_CARD: 123123365,
-    EXP_DATE: '01.25',
+    EXP_DATE: '01/25',
   },
   {
     LOGIN: 'jojo246',
@@ -2703,7 +2703,7 @@ export default [
     ADRESS2: 'Milan246',
     PASSANGER_NAME: 'Jojo Bean246',
     CREDIT_CARD: 123123366,
-    EXP_DATE: '01.25',
+    EXP_DATE: '01/25',
   },
   {
     LOGIN: 'jojo247',
@@ -2714,7 +2714,7 @@ export default [
     ADRESS2: 'Milan247',
     PASSANGER_NAME: 'Jojo Bean247',
     CREDIT_CARD: 123123367,
-    EXP_DATE: '01.25',
+    EXP_DATE: '01/25',
   },
   {
     LOGIN: 'jojo248',
@@ -2725,7 +2725,7 @@ export default [
     ADRESS2: 'Milan248',
     PASSANGER_NAME: 'Jojo Bean248',
     CREDIT_CARD: 123123368,
-    EXP_DATE: '01.25',
+    EXP_DATE: '01/25',
   },
   {
     LOGIN: 'jojo249',
@@ -2736,7 +2736,7 @@ export default [
     ADRESS2: 'Milan249',
     PASSANGER_NAME: 'Jojo Bean249',
     CREDIT_CARD: 123123369,
-    EXP_DATE: '01.25',
+    EXP_DATE: '01/25',
   },
   {
     LOGIN: 'jojo250',
@@ -2747,7 +2747,7 @@ export default [
     ADRESS2: 'Milan250',
     PASSANGER_NAME: 'Jojo Bean250',
     CREDIT_CARD: 123123370,
-    EXP_DATE: '01.25',
+    EXP_DATE: '01/25',
   },
   {
     LOGIN: 'jojo251',
@@ -2758,7 +2758,7 @@ export default [
     ADRESS2: 'Milan251',
     PASSANGER_NAME: 'Jojo Bean251',
     CREDIT_CARD: 123123371,
-    EXP_DATE: '01.25',
+    EXP_DATE: '01/25',
   },
   {
     LOGIN: 'jojo252',
@@ -2769,7 +2769,7 @@ export default [
     ADRESS2: 'Milan252',
     PASSANGER_NAME: 'Jojo Bean252',
     CREDIT_CARD: 123123372,
-    EXP_DATE: '01.25',
+    EXP_DATE: '01/25',
   },
   {
     LOGIN: 'jojo253',
@@ -2780,7 +2780,7 @@ export default [
     ADRESS2: 'Milan253',
     PASSANGER_NAME: 'Jojo Bean253',
     CREDIT_CARD: 123123373,
-    EXP_DATE: '01.25',
+    EXP_DATE: '01/25',
   },
   {
     LOGIN: 'jojo254',
@@ -2791,7 +2791,7 @@ export default [
     ADRESS2: 'Milan254',
     PASSANGER_NAME: 'Jojo Bean254',
     CREDIT_CARD: 123123374,
-    EXP_DATE: '01.25',
+    EXP_DATE: '01/25',
   },
   {
     LOGIN: 'jojo255',
@@ -2802,7 +2802,7 @@ export default [
     ADRESS2: 'Milan255',
     PASSANGER_NAME: 'Jojo Bean255',
     CREDIT_CARD: 123123375,
-    EXP_DATE: '01.25',
+    EXP_DATE: '01/25',
   },
   {
     LOGIN: 'jojo256',
@@ -2813,7 +2813,7 @@ export default [
     ADRESS2: 'Milan256',
     PASSANGER_NAME: 'Jojo Bean256',
     CREDIT_CARD: 123123376,
-    EXP_DATE: '01.25',
+    EXP_DATE: '01/25',
   },
   {
     LOGIN: 'jojo257',
@@ -2824,7 +2824,7 @@ export default [
     ADRESS2: 'Milan257',
     PASSANGER_NAME: 'Jojo Bean257',
     CREDIT_CARD: 123123377,
-    EXP_DATE: '01.25',
+    EXP_DATE: '01/25',
   },
   {
     LOGIN: 'jojo258',
@@ -2835,7 +2835,7 @@ export default [
     ADRESS2: 'Milan258',
     PASSANGER_NAME: 'Jojo Bean258',
     CREDIT_CARD: 123123378,
-    EXP_DATE: '01.25',
+    EXP_DATE: '01/25',
   },
   {
     LOGIN: 'jojo259',
@@ -2846,7 +2846,7 @@ export default [
     ADRESS2: 'Milan259',
     PASSANGER_NAME: 'Jojo Bean259',
     CREDIT_CARD: 123123379,
-    EXP_DATE: '01.25',
+    EXP_DATE: '01/25',
   },
   {
     LOGIN: 'jojo260',
@@ -2857,7 +2857,7 @@ export default [
     ADRESS2: 'Milan260',
     PASSANGER_NAME: 'Jojo Bean260',
     CREDIT_CARD: 123123380,
-    EXP_DATE: '01.25',
+    EXP_DATE: '01/25',
   },
   {
     LOGIN: 'jojo261',
@@ -2868,7 +2868,7 @@ export default [
     ADRESS2: 'Milan261',
     PASSANGER_NAME: 'Jojo Bean261',
     CREDIT_CARD: 123123381,
-    EXP_DATE: '01.25',
+    EXP_DATE: '01/25',
   },
   {
     LOGIN: 'jojo262',
@@ -2879,7 +2879,7 @@ export default [
     ADRESS2: 'Milan262',
     PASSANGER_NAME: 'Jojo Bean262',
     CREDIT_CARD: 123123382,
-    EXP_DATE: '01.25',
+    EXP_DATE: '01/25',
   },
   {
     LOGIN: 'jojo263',
@@ -2890,7 +2890,7 @@ export default [
     ADRESS2: 'Milan263',
     PASSANGER_NAME: 'Jojo Bean263',
     CREDIT_CARD: 123123383,
-    EXP_DATE: '01.25',
+    EXP_DATE: '01/25',
   },
   {
     LOGIN: 'jojo264',
@@ -2901,7 +2901,7 @@ export default [
     ADRESS2: 'Milan264',
     PASSANGER_NAME: 'Jojo Bean264',
     CREDIT_CARD: 123123384,
-    EXP_DATE: '01.25',
+    EXP_DATE: '01/25',
   },
   {
     LOGIN: 'jojo265',
@@ -2912,7 +2912,7 @@ export default [
     ADRESS2: 'Milan265',
     PASSANGER_NAME: 'Jojo Bean265',
     CREDIT_CARD: 123123385,
-    EXP_DATE: '01.25',
+    EXP_DATE: '01/25',
   },
   {
     LOGIN: 'jojo266',
@@ -2923,7 +2923,7 @@ export default [
     ADRESS2: 'Milan266',
     PASSANGER_NAME: 'Jojo Bean266',
     CREDIT_CARD: 123123386,
-    EXP_DATE: '01.25',
+    EXP_DATE: '01/25',
   },
   {
     LOGIN: 'jojo267',
@@ -2934,7 +2934,7 @@ export default [
     ADRESS2: 'Milan267',
     PASSANGER_NAME: 'Jojo Bean267',
     CREDIT_CARD: 123123387,
-    EXP_DATE: '01.25',
+    EXP_DATE: '01/25',
   },
   {
     LOGIN: 'jojo268',
@@ -2945,7 +2945,7 @@ export default [
     ADRESS2: 'Milan268',
     PASSANGER_NAME: 'Jojo Bean268',
     CREDIT_CARD: 123123388,
-    EXP_DATE: '01.25',
+    EXP_DATE: '01/25',
   },
   {
     LOGIN: 'jojo269',
@@ -2956,7 +2956,7 @@ export default [
     ADRESS2: 'Milan269',
     PASSANGER_NAME: 'Jojo Bean269',
     CREDIT_CARD: 123123389,
-    EXP_DATE: '01.25',
+    EXP_DATE: '01/25',
   },
   {
     LOGIN: 'jojo270',
@@ -2967,7 +2967,7 @@ export default [
     ADRESS2: 'Milan270',
     PASSANGER_NAME: 'Jojo Bean270',
     CREDIT_CARD: 123123390,
-    EXP_DATE: '01.25',
+    EXP_DATE: '01/25',
   },
   {
     LOGIN: 'jojo271',
@@ -2978,7 +2978,7 @@ export default [
     ADRESS2: 'Milan271',
     PASSANGER_NAME: 'Jojo Bean271',
     CREDIT_CARD: 123123391,
-    EXP_DATE: '01.25',
+    EXP_DATE: '01/25',
   },
   {
     LOGIN: 'jojo272',
@@ -2989,7 +2989,7 @@ export default [
     ADRESS2: 'Milan272',
     PASSANGER_NAME: 'Jojo Bean272',
     CREDIT_CARD: 123123392,
-    EXP_DATE: '01.25',
+    EXP_DATE: '01/25',
   },
   {
     LOGIN: 'jojo273',
@@ -3000,7 +3000,7 @@ export default [
     ADRESS2: 'Milan273',
     PASSANGER_NAME: 'Jojo Bean273',
     CREDIT_CARD: 123123393,
-    EXP_DATE: '01.25',
+    EXP_DATE: '01/25',
   },
   {
     LOGIN: 'jojo274',
@@ -3011,7 +3011,7 @@ export default [
     ADRESS2: 'Milan274',
     PASSANGER_NAME: 'Jojo Bean274',
     CREDIT_CARD: 123123394,
-    EXP_DATE: '01.25',
+    EXP_DATE: '01/25',
   },
   {
     LOGIN: 'jojo275',
@@ -3022,7 +3022,7 @@ export default [
     ADRESS2: 'Milan275',
     PASSANGER_NAME: 'Jojo Bean275',
     CREDIT_CARD: 123123395,
-    EXP_DATE: '01.25',
+    EXP_DATE: '01/25',
   },
   {
     LOGIN: 'jojo276',
@@ -3033,7 +3033,7 @@ export default [
     ADRESS2: 'Milan276',
     PASSANGER_NAME: 'Jojo Bean276',
     CREDIT_CARD: 123123396,
-    EXP_DATE: '01.25',
+    EXP_DATE: '01/25',
   },
   {
     LOGIN: 'jojo277',
@@ -3044,7 +3044,7 @@ export default [
     ADRESS2: 'Milan277',
     PASSANGER_NAME: 'Jojo Bean277',
     CREDIT_CARD: 123123397,
-    EXP_DATE: '01.25',
+    EXP_DATE: '01/25',
   },
   {
     LOGIN: 'jojo278',
@@ -3055,7 +3055,7 @@ export default [
     ADRESS2: 'Milan278',
     PASSANGER_NAME: 'Jojo Bean278',
     CREDIT_CARD: 123123398,
-    EXP_DATE: '01.25',
+    EXP_DATE: '01/25',
   },
   {
     LOGIN: 'jojo279',
@@ -3066,7 +3066,7 @@ export default [
     ADRESS2: 'Milan279',
     PASSANGER_NAME: 'Jojo Bean279',
     CREDIT_CARD: 123123399,
-    EXP_DATE: '01.25',
+    EXP_DATE: '01/25',
   },
   {
     LOGIN: 'jojo280',
@@ -3077,7 +3077,7 @@ export default [
     ADRESS2: 'Milan280',
     PASSANGER_NAME: 'Jojo Bean280',
     CREDIT_CARD: 123123400,
-    EXP_DATE: '01.25',
+    EXP_DATE: '01/25',
   },
   {
     LOGIN: 'jojo281',
@@ -3088,7 +3088,7 @@ export default [
     ADRESS2: 'Milan281',
     PASSANGER_NAME: 'Jojo Bean281',
     CREDIT_CARD: 123123401,
-    EXP_DATE: '01.25',
+    EXP_DATE: '01/25',
   },
   {
     LOGIN: 'jojo282',
@@ -3099,7 +3099,7 @@ export default [
     ADRESS2: 'Milan282',
     PASSANGER_NAME: 'Jojo Bean282',
     CREDIT_CARD: 123123402,
-    EXP_DATE: '01.25',
+    EXP_DATE: '01/25',
   },
   {
     LOGIN: 'jojo283',
@@ -3110,7 +3110,7 @@ export default [
     ADRESS2: 'Milan283',
     PASSANGER_NAME: 'Jojo Bean283',
     CREDIT_CARD: 123123403,
-    EXP_DATE: '01.25',
+    EXP_DATE: '01/25',
   },
   {
     LOGIN: 'jojo284',
@@ -3121,7 +3121,7 @@ export default [
     ADRESS2: 'Milan284',
     PASSANGER_NAME: 'Jojo Bean284',
     CREDIT_CARD: 123123404,
-    EXP_DATE: '01.25',
+    EXP_DATE: '01/25',
   },
   {
     LOGIN: 'jojo285',
@@ -3132,7 +3132,7 @@ export default [
     ADRESS2: 'Milan285',
     PASSANGER_NAME: 'Jojo Bean285',
     CREDIT_CARD: 123123405,
-    EXP_DATE: '01.25',
+    EXP_DATE: '01/25',
   },
   {
     LOGIN: 'jojo286',
@@ -3143,7 +3143,7 @@ export default [
     ADRESS2: 'Milan286',
     PASSANGER_NAME: 'Jojo Bean286',
     CREDIT_CARD: 123123406,
-    EXP_DATE: '01.25',
+    EXP_DATE: '01/25',
   },
   {
     LOGIN: 'jojo287',
@@ -3154,7 +3154,7 @@ export default [
     ADRESS2: 'Milan287',
     PASSANGER_NAME: 'Jojo Bean287',
     CREDIT_CARD: 123123407,
-    EXP_DATE: '01.25',
+    EXP_DATE: '01/25',
   },
   {
     LOGIN: 'jojo288',
@@ -3165,7 +3165,7 @@ export default [
     ADRESS2: 'Milan288',
     PASSANGER_NAME: 'Jojo Bean288',
     CREDIT_CARD: 123123408,
-    EXP_DATE: '01.25',
+    EXP_DATE: '01/25',
   },
   {
     LOGIN: 'jojo289',
@@ -3176,7 +3176,7 @@ export default [
     ADRESS2: 'Milan289',
     PASSANGER_NAME: 'Jojo Bean289',
     CREDIT_CARD: 123123409,
-    EXP_DATE: '01.25',
+    EXP_DATE: '01/25',
   },
   {
     LOGIN: 'jojo290',
@@ -3187,7 +3187,7 @@ export default [
     ADRESS2: 'Milan290',
     PASSANGER_NAME: 'Jojo Bean290',
     CREDIT_CARD: 123123410,
-    EXP_DATE: '01.25',
+    EXP_DATE: '01/25',
   },
   {
     LOGIN: 'jojo291',
@@ -3198,7 +3198,7 @@ export default [
     ADRESS2: 'Milan291',
     PASSANGER_NAME: 'Jojo Bean291',
     CREDIT_CARD: 123123411,
-    EXP_DATE: '01.25',
+    EXP_DATE: '01/25',
   },
   {
     LOGIN: 'jojo292',
@@ -3209,7 +3209,7 @@ export default [
     ADRESS2: 'Milan292',
     PASSANGER_NAME: 'Jojo Bean292',
     CREDIT_CARD: 123123412,
-    EXP_DATE: '01.25',
+    EXP_DATE: '01/25',
   },
   {
     LOGIN: 'jojo293',
@@ -3220,7 +3220,7 @@ export default [
     ADRESS2: 'Milan293',
     PASSANGER_NAME: 'Jojo Bean293',
     CREDIT_CARD: 123123413,
-    EXP_DATE: '01.25',
+    EXP_DATE: '01/25',
   },
   {
     LOGIN: 'jojo294',
@@ -3231,7 +3231,7 @@ export default [
     ADRESS2: 'Milan294',
     PASSANGER_NAME: 'Jojo Bean294',
     CREDIT_CARD: 123123414,
-    EXP_DATE: '01.25',
+    EXP_DATE: '01/25',
   },
   {
     LOGIN: 'jojo295',
@@ -3242,7 +3242,7 @@ export default [
     ADRESS2: 'Milan295',
     PASSANGER_NAME: 'Jojo Bean295',
     CREDIT_CARD: 123123415,
-    EXP_DATE: '01.25',
+    EXP_DATE: '01/25',
   },
   {
     LOGIN: 'jojo296',
@@ -3253,7 +3253,7 @@ export default [
     ADRESS2: 'Milan296',
     PASSANGER_NAME: 'Jojo Bean296',
     CREDIT_CARD: 123123416,
-    EXP_DATE: '01.25',
+    EXP_DATE: '01/25',
   },
   {
     LOGIN: 'jojo297',
@@ -3264,7 +3264,7 @@ export default [
     ADRESS2: 'Milan297',
     PASSANGER_NAME: 'Jojo Bean297',
     CREDIT_CARD: 123123417,
-    EXP_DATE: '01.25',
+    EXP_DATE: '01/25',
   },
   {
     LOGIN: 'jojo298',
@@ -3275,7 +3275,7 @@ export default [
     ADRESS2: 'Milan298',
     PASSANGER_NAME: 'Jojo Bean298',
     CREDIT_CARD: 123123418,
-    EXP_DATE: '01.25',
+    EXP_DATE: '01/25',
   },
   {
     LOGIN: 'jojo299',
@@ -3286,7 +3286,7 @@ export default [
     ADRESS2: 'Milan299',
     PASSANGER_NAME: 'Jojo Bean299',
     CREDIT_CARD: 123123419,
-    EXP_DATE: '01.25',
+    EXP_DATE: '01/25',
   },
   {
     LOGIN: 'jojo300',
@@ -3297,6 +3297,6 @@ export default [
     ADRESS2: 'Milan300',
     PASSANGER_NAME: 'Jojo Bean300',
     CREDIT_CARD: 123123420,
-    EXP_DATE: '01.25',
+    EXP_DATE: '01/25',
   },
 ];
