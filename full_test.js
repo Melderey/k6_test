@@ -17,6 +17,9 @@ let USER_SESSION = '';
 let DEPART_CITIES = [];
 let DEPART_CITY = '';
 let RETURN_CITY = '';
+const NUM_PASSANGERS = 1;
+let OUTBOUND_FLIGHT = '';
+let RETURN_FLIGHT = '';
 
 export const options = {};
 
@@ -451,7 +454,7 @@ export default function main() {
   group(`page_4 - http://${HOST}:${PORT}/webtours/`, () => {
     response = http.post(
       `http://${HOST}:${PORT}/cgi-bin/reservations.pl`,
-      `advanceDiscount=0&depart=${DEPART_CITY}&departDate=${DEPART_DATE}&arrive=${RETURN_CITY}&returnDate=${RETURN_DATE}&numPassengers=1&roundtrip=on&seatPref=None&seatType=Coach&findFlights.x=75&findFlights.y=8&.cgifields=roundtrip%2CseatType%2CseatPref`,
+      `advanceDiscount=0&depart=${DEPART_CITY}&departDate=${DEPART_DATE}&arrive=${RETURN_CITY}&returnDate=${RETURN_DATE}&numPassengers=${NUM_PASSANGERS}&roundtrip=on&seatPref=None&seatType=Coach&findFlights.x=75&findFlights.y=8&.cgifields=roundtrip%2CseatType%2CseatPref`,
       {
         headers: {
           Host: `${HOST}:${PORT}`,
@@ -476,6 +479,17 @@ export default function main() {
       },
     );
 
+    OUTBOUND_FLIGHT = findBetween(response.body, 'name="outboundFlight" value="', '" checked="checked"');
+    RETURN_FLIGHT = findBetween(response.body, 'name="returnFlight" value="', '" checked="checked"');
+
+    if (!OUTBOUND_FLIGHT) {
+      throw new Error('OUTBOUND_FLIGHT not received!');
+    }
+
+    if (!RETURN_FLIGHT) {
+      throw new Error('RETURN_FLIGHT not received!');
+    }
+
     response = http.get(`http://${HOST}:${PORT}/WebTours/images/button_next.gif`, {
       headers: {
         Host: `${HOST}:${PORT}`,
@@ -497,9 +511,9 @@ export default function main() {
     response = http.post(
       `http://${HOST}:${PORT}/cgi-bin/reservations.pl`,
       {
-        outboundFlight: '021;301;02/13/2024',
-        returnFlight: '201;301;03/14/2024',
-        numPassengers: '1',
+        outboundFlight: OUTBOUND_FLIGHT,
+        returnFlight: RETURN_FLIGHT,
+        numPassengers: NUM_PASSANGERS,
         advanceDiscount: '0',
         seatType: 'Coach',
         seatPref: 'None',
@@ -547,12 +561,12 @@ export default function main() {
   //       creditCard: '6666666666',
   //       expDate: '01/25',
   //       oldCCOption: '',
-  //       numPassengers: '1',
+  //       numPassengers: NUM_PASSANGERS,
   //       seatType: 'Coach',
   //       seatPref: 'None',
-  //       outboundFlight: '021;301;02/13/2024',
+  //       outboundFlight: OUTBOUND_FLIGHT,
   //       advanceDiscount: '0',
-  //       returnFlight: '201;301;03/14/2024',
+  //       returnFlight: RETURN_FLIGHT,
   //       JSFormSubmit: 'off',
   //       'buyFlights.x': '82',
   //       'buyFlights.y': '6',
