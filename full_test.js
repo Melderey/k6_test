@@ -31,7 +31,39 @@ let RECPONCE_LINE_ID = '';
 let CGI_FIELDS = [];
 let RECPONCE_LINE_CGI_FIELDS = '';
 
-export const options = {};
+const numSteps = 5;
+const executor = 'ramping-arrival-rate';
+const startRate = 1;
+const timeUnit = '2s';
+const preAllocatedVUs = 50;
+const maxVUs = 100;
+const rampupDuration = '5s';
+const stageDuration = '5s';
+
+const getStages = (numSteps, rampUpDuration, stageDuration) => {
+  const stages = [];
+
+  for (let i = numSteps; i >= 1; i -= 1) {
+    const target = i;
+    stages.push({ target, duration: rampUpDuration });
+    stages.push({ target, duration: stageDuration });
+  }
+
+  return stages;
+};
+
+export const options = {
+  scenarios: {
+    contacts: {
+      executor,
+      startRate,
+      timeUnit,
+      preAllocatedVUs,
+      maxVUs,
+      stages: getStages(numSteps, rampupDuration, stageDuration),
+    },
+  },
+};
 
 export default function main() {
   // eslint-disable-next-line no-unused-vars
