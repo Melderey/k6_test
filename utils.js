@@ -27,6 +27,11 @@ export const getRandomDelay = (min, max, delay) => {
   return randomDelay;
 };
 
+export const getResponceLine = (params, separator) => {
+  const str = params.join(separator);
+  return str;
+};
+
 export const HOST = 'localhost';
 export const PORT = '1080';
 export const LOGIN = 'jojo';

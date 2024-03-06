@@ -10,7 +10,7 @@ import http from 'k6/http';
 import { findBetween } from 'https://jslib.k6.io/k6-utils/1.2.0/index.js';
 
 import {
-  DEPART_DATE, HOST, LOGIN, PASS, PORT, RETURN_DATE, getRandomCity, getRandomDelay,
+  DEPART_DATE, HOST, LOGIN, PASS, PORT, RETURN_DATE, getRandomCity, getRandomDelay, getResponceLine,
 } from './utils.js';
 
 let USER_SESSION = '';
@@ -20,10 +20,16 @@ let RETURN_CITY = '';
 const NUM_PASSANGERS = 1;
 let OUTBOUND_FLIGHT = '';
 let RETURN_FLIGHT = '';
-const SMALL_CONSTANT_DELAY = 1;
-const LONG_CONSTANT_DELAY = 3;
+
+const SMALL_CONSTANT_DELAY = 0; // 1
+const LONG_CONSTANT_DELAY = 0; // 3
 const RANDOM_SMALL_CONSTANT_DELAY = getRandomDelay(75, 100, SMALL_CONSTANT_DELAY);
 const RANDOM_LONG_CONSTANT_DELAY = getRandomDelay(75, 100, LONG_CONSTANT_DELAY);
+
+let FLIGHTS_ID = [];
+let RECPONCE_LINE_ID = '';
+let CGI_FIELDS = [];
+let RECPONCE_LINE_CGI_FIELDS = '';
 
 export const options = {};
 
@@ -787,6 +793,20 @@ export default function main() {
         'Sec-Fetch-Site': 'same-origin',
       },
     });
+
+    // получаем все id зарезервированных билетов
+    FLIGHTS_ID = findBetween(response.body, 'name="flightID" value="', '"  />', true);
+
+    if (!FLIGHTS_ID) {
+      throw new Error('FLIGHTS_ID not received!');
+    }
+
+    CGI_FIELDS = findBetween(response.body, 'name=".cgifields" value="', '"  />', true);
+
+    if (!CGI_FIELDS) {
+      throw new Error('CGI_FIELDS not received!');
+    }
+
     response = http.get(`http://${HOST}:${PORT}/WebTours/images/cancelreservation.gif`, {
       headers: {
         Host: `${HOST}:${PORT}`,
@@ -864,49 +884,17 @@ export default function main() {
 
   sleep(RANDOM_SMALL_CONSTANT_DELAY);
 
-  // // 09_1_Deleting_reservations
-  group(`page_9 - http://${HOST}:${PORT}/webtours/`, () => {
-    response = http.post(
-      `http://${HOST}:${PORT}/cgi-bin/itinerary.pl`,
-      {
-        1: 'on',
-        flightID: '246889677-92430-JB',
-        'removeFlights.x': '70',
-        'removeFlights.y': '14',
-        '.cgifields': '1',
-      },
-      {
-        headers: {
-          Host: `${HOST}:${PORT}`,
-          'User-Agent':
-            'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:122.0) Gecko/20100101 Firefox/122.0',
-          Accept:
-            'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8',
-          'Accept-Language': 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3',
-          'Accept-Encoding': 'gzip, deflate, br',
-          'Content-Type': 'application/x-www-form-urlencoded',
-          Origin: `http://${HOST}:${PORT}`,
-          Connection: 'keep-alive',
-          Referer: `http://${HOST}:${PORT}/cgi-bin/itinerary.pl`,
-          Cookie:
-            `MSO=SID&1707745210; MTUserInfo=firstName&Jojo&username&${LOGIN}&address2&&hash&47&address1&&lastName&Bean%0A`,
-          'Upgrade-Insecure-Requests': '1',
-          'Sec-Fetch-Dest': 'frame',
-          'Sec-Fetch-Mode': 'navigate',
-          'Sec-Fetch-Site': 'same-origin',
-          'Sec-Fetch-User': '?1',
-        },
-      },
-    );
-  });
-
-  // sleep(RANDOM_SMALL_CONSTANT_DELAY);
-
-  // 09_2_Deleting_reservations_all
-  // group(`page_6 - http://${HOST}:${PORT}/webtours/`, () => {
+  // // // 09_1_Deleting_reservations
+  // group(`page_9 - http://${HOST}:${PORT}/webtours/`, () => {
   //   response = http.post(
   //     `http://${HOST}:${PORT}/cgi-bin/itinerary.pl`,
-  //     'flightID=0-7-JB%2C753-1564-JB&removeAllFlights.x=65&removeAllFlights.y=12&.cgifields=1%2C2',
+  //     {
+  //       1: 'on',
+  //       flightID: '246889677-92430-JB',
+  //       'removeFlights.x': '70',
+  //       'removeFlights.y': '14',
+  //       '.cgifields': '1',
+  //     },
   //     {
   //       headers: {
   //         Host: `${HOST}:${PORT}`,
@@ -921,7 +909,7 @@ export default function main() {
   //         Connection: 'keep-alive',
   //         Referer: `http://${HOST}:${PORT}/cgi-bin/itinerary.pl`,
   //         Cookie:
-  //           `MSO=SID&1707810977; MTUserInfo=hash&47&firstName&Jojo&lastName&Bean%0A&address1&&address2&&username&${LOGIN}`,
+  //           `MSO=SID&1707745210; MTUserInfo=firstName&Jojo&username&${LOGIN}&address2&&hash&47&address1&&lastName&Bean%0A`,
   //         'Upgrade-Insecure-Requests': '1',
   //         'Sec-Fetch-Dest': 'frame',
   //         'Sec-Fetch-Mode': 'navigate',
@@ -933,6 +921,52 @@ export default function main() {
   // });
 
   // sleep(RANDOM_SMALL_CONSTANT_DELAY);
+
+  // вебтурс может выдать ошибку и не удалить выбранную бронь
+  // поэтому необходимо удалять все брони
+  RECPONCE_LINE_ID = getResponceLine(FLIGHTS_ID, '%2C');
+  RECPONCE_LINE_CGI_FIELDS = getResponceLine(CGI_FIELDS, '%2C');
+
+  // RECPONCE_LINE_ID = getResponceLine(FLIGHTS_ID, ',');
+  // RECPONCE_LINE_CGI_FIELDS = getResponceLine(CGI_FIELDS, ',');
+
+  // 09_2_Deleting_reservations_all
+  group(`page_6 - http://${HOST}:${PORT}/webtours/`, () => {
+    response = http.post(
+      `http://${HOST}:${PORT}/cgi-bin/itinerary.pl`,
+      // 'flightID=24691373-135397-JB%2C753-1564-JB&removeAllFlights.x=64&removeAllFlights.y=9&.cgifields=1%2C2',
+      `flightID=${RECPONCE_LINE_ID}&removeAllFlights.x=64&removeAllFlights.y=9&.cgifields=${RECPONCE_LINE_CGI_FIELDS}`,
+      {
+        headers: {
+          Host: `${HOST}:${PORT}`,
+          'User-Agent':
+            'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:122.0) Gecko/20100101 Firefox/122.0',
+          Accept:
+            'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8',
+          'Accept-Language': 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3',
+          'Accept-Encoding': 'gzip, deflate, br',
+          'Content-Type': 'application/x-www-form-urlencoded',
+          Origin: `http://${HOST}:${PORT}`,
+          Connection: 'keep-alive',
+          Referer: `http://${HOST}:${PORT}/cgi-bin/itinerary.pl`,
+          Cookie:
+            `MSO=SID&1707810977; MTUserInfo=hash&47&firstName&Jojo&lastName&Bean%0A&address1&&address2&&username&${LOGIN}`,
+          'Upgrade-Insecure-Requests': '1',
+          'Sec-Fetch-Dest': 'frame',
+          'Sec-Fetch-Mode': 'navigate',
+          'Sec-Fetch-Site': 'same-origin',
+          'Sec-Fetch-User': '?1',
+        },
+      },
+    );
+
+    console.log('RECPONCE_LINE_ID', RECPONCE_LINE_ID);
+    console.log('FLIGHTS_ID', FLIGHTS_ID);
+    // console.log(response.body)
+    console.log(response);
+  });
+
+  sleep(RANDOM_SMALL_CONSTANT_DELAY);
 
   // 10_Logout
   group(`page_10 - http://${HOST}:${PORT}/webtours/`, () => {
