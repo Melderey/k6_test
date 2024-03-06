@@ -22,6 +22,11 @@ export const getRandomCity = (cityArr = []) => {
   return cityArr[cityNum];
 };
 
+export const getRandomDelay = (min, max, delay) => {
+  const randomDelay = delay + (delay * (min + Math.floor(Math.random() * max))) / 100;
+  return randomDelay;
+};
+
 export const HOST = 'localhost';
 export const PORT = '1080';
 export const LOGIN = 'jojo';

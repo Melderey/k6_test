@@ -10,7 +10,7 @@ import http from 'k6/http';
 import { findBetween } from 'https://jslib.k6.io/k6-utils/1.2.0/index.js';
 
 import {
-  DEPART_DATE, HOST, LOGIN, PASS, PORT, RETURN_DATE, getRandomCity,
+  DEPART_DATE, HOST, LOGIN, PASS, PORT, RETURN_DATE, getRandomCity, getRandomDelay,
 } from './utils.js';
 
 let USER_SESSION = '';
@@ -20,6 +20,10 @@ let RETURN_CITY = '';
 const NUM_PASSANGERS = 1;
 let OUTBOUND_FLIGHT = '';
 let RETURN_FLIGHT = '';
+const SMALL_CONSTANT_DELAY = 1;
+const LONG_CONSTANT_DELAY = 3;
+const RANDOM_SMALL_CONSTANT_DELAY = getRandomDelay(75, 100, SMALL_CONSTANT_DELAY);
+const RANDOM_LONG_CONSTANT_DELAY = getRandomDelay(75, 100, LONG_CONSTANT_DELAY);
 
 export const options = {};
 
@@ -144,8 +148,7 @@ export default function main() {
     });
   });
 
-  // Automatically added sleep
-  sleep(1);
+  sleep(RANDOM_SMALL_CONSTANT_DELAY);
 
   // 02_Login
   group(`page_2 - http://${HOST}:${PORT}/webtours/`, () => {
@@ -295,8 +298,7 @@ export default function main() {
     });
   });
 
-  // Automatically added sleep
-  sleep(1);
+  sleep(RANDOM_SMALL_CONSTANT_DELAY);
 
   // 03_Opening_tour_search_page
   group(`page_3 - http://${HOST}:${PORT}/webtours/`, () => {
@@ -448,8 +450,8 @@ export default function main() {
     });
   });
 
-  // Automatically added sleep
-  sleep(1);
+  sleep(RANDOM_SMALL_CONSTANT_DELAY);
+
   // 04_Search_round_ticket
   group(`page_4 - http://${HOST}:${PORT}/webtours/`, () => {
     response = http.post(
@@ -503,8 +505,7 @@ export default function main() {
     });
   });
 
-  // Automatically added sleep
-  sleep(1);
+  sleep(RANDOM_LONG_CONSTANT_DELAY);
 
   // 05_Select_results
   group(`page_5 - http://${HOST}:${PORT}/webtours/`, () => {
@@ -545,8 +546,7 @@ export default function main() {
     );
   });
 
-  // Automatically added sleep
-  sleep(1);
+  sleep(RANDOM_LONG_CONSTANT_DELAY);
 
   // 06_1_Completing_booking
   // group(`page_6 - http://${HOST}:${PORT}/webtours/`, () => {
@@ -627,8 +627,7 @@ export default function main() {
   //   );
   // });
 
-  // Automatically added sleep
-  // sleep(1);
+  // sleep(RANDOM_LONG_CONSTANT_DELAY);
 
   // 06_2_Completing_booking_all
   group(`page_6 - http://${HOST}:${PORT}/webtours/`, () => {
@@ -660,8 +659,7 @@ export default function main() {
     );
   });
 
-  // Automatically added sleep
-  sleep(1);
+  sleep(RANDOM_SMALL_CONSTANT_DELAY);
 
   // 07_Go_home_page
   group(`page_7 - http://${HOST}:${PORT}/webtours/`, () => {
@@ -759,8 +757,7 @@ export default function main() {
     });
   });
 
-  // Automatically added sleep
-  sleep(1);
+  sleep(RANDOM_SMALL_CONSTANT_DELAY);
 
   // 08_Opening_reservations
   group(`page_8 - http://${HOST}:${PORT}/webtours/`, () => {
@@ -897,8 +894,7 @@ export default function main() {
     });
   });
 
-  // Automatically added sleep
-  sleep(1);
+  sleep(RANDOM_SMALL_CONSTANT_DELAY);
 
   // 09_Deleting_reservations
   group(`page_9 - http://${HOST}:${PORT}/webtours/`, () => {
@@ -936,8 +932,7 @@ export default function main() {
     );
   });
 
-  // Automatically added sleep
-  sleep(1);
+  sleep(RANDOM_SMALL_CONSTANT_DELAY);
 
   // 10_Logout
   group(`page_10 - http://${HOST}:${PORT}/webtours/`, () => {
@@ -1015,6 +1010,5 @@ export default function main() {
     });
   });
 
-  // Automatically added sleep
-  sleep(1);
+  sleep(RANDOM_SMALL_CONSTANT_DELAY);
 }
