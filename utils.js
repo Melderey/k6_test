@@ -15,11 +15,11 @@ const getRandomDate = (start, end) => {
   return randomDate;
 };
 
-export const getRandomCity = (cityArr = []) => {
-  const max = cityArr.length;
-  const cityNum = Math.floor(Math.random() * max);
+export const getRandomParametr = (parametrsArr = []) => {
+  const max = parametrsArr.length;
+  const parametrNum = Math.floor(Math.random() * max);
 
-  return cityArr[cityNum];
+  return parametrsArr[parametrNum];
 };
 
 export const getRandomDelay = (min, max, delay) => {

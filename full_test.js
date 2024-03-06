@@ -16,7 +16,7 @@ import {
   HOST,
   PORT,
   RETURN_DATE,
-  getRandomCity,
+  getRandomParametr,
   getRandomDelay,
   getResponceLine,
 } from './utils.js';
@@ -38,6 +38,10 @@ let FLIGHTS_ID = [];
 let RECPONCE_LINE_ID = '';
 let CGI_FIELDS = [];
 let RECPONCE_LINE_CGI_FIELDS = '';
+let SEAT_PREF = [];
+let SEAT_TYPE = [];
+let RANDOM_SEAT_PREF = '';
+let RANDOM_SEAT_TYPE = '';
 
 const numSteps = 5;
 const executor = 'ramping-arrival-rate';
@@ -414,15 +418,30 @@ export default function main() {
     DEPART_CITIES = findBetween(response.body, '\n<option value=\"', '\">', true);
 
     if (DEPART_CITIES && DEPART_CITIES.length) {
-      DEPART_CITY = getRandomCity(DEPART_CITIES);
-      RETURN_CITY = getRandomCity(DEPART_CITIES);
+      DEPART_CITY = getRandomParametr(DEPART_CITIES);
+      RETURN_CITY = getRandomParametr(DEPART_CITIES);
 
       while (DEPART_CITY === RETURN_CITY) {
-        DEPART_CITY = getRandomCity(DEPART_CITIES);
+        DEPART_CITY = getRandomParametr(DEPART_CITIES);
       }
     } else {
       throw new Error('DEPART_CITIES not received!');
     }
+
+    SEAT_PREF = findBetween(response.body, 'name="seatPref" value="', '" />', true);
+
+    if (!SEAT_PREF) {
+      throw new Error('SEAT_PREF not received!');
+    }
+
+    SEAT_TYPE = findBetween(response.body, 'name="seatType" value="', '" />', true);
+
+    if (!findBetween) {
+      throw new Error('SEAT_TYPE not received!');
+    }
+
+    RANDOM_SEAT_PREF = getRandomParametr(SEAT_PREF);
+    RANDOM_SEAT_TYPE = getRandomParametr(SEAT_TYPE);
 
     response = http.get(`http://${HOST}:${PORT}/WebTours/images/button_next.gif`, {
       headers: {
@@ -505,7 +524,7 @@ export default function main() {
   group(`page_4 - http://${HOST}:${PORT}/webtours/`, () => {
     response = http.post(
       `http://${HOST}:${PORT}/cgi-bin/reservations.pl`,
-      `advanceDiscount=0&depart=${DEPART_CITY}&departDate=${DEPART_DATE}&arrive=${RETURN_CITY}&returnDate=${RETURN_DATE}&numPassengers=${NUM_PASSANGERS}&roundtrip=on&seatPref=None&seatType=Coach&findFlights.x=75&findFlights.y=8&.cgifields=roundtrip%2CseatType%2CseatPref`,
+      `advanceDiscount=0&depart=${DEPART_CITY}&departDate=${DEPART_DATE}&arrive=${RETURN_CITY}&returnDate=${RETURN_DATE}&numPassengers=${NUM_PASSANGERS}&roundtrip=on&seatPref=${RANDOM_SEAT_PREF}&seatType=${RANDOM_SEAT_TYPE}&findFlights.x=75&findFlights.y=8&.cgifields=roundtrip%2CseatType%2CseatPref`,
       {
         headers: {
           Host: `${HOST}:${PORT}`,
@@ -531,11 +550,12 @@ export default function main() {
     );
 
     OUTBOUND_FLIGHT = findBetween(response.body, 'name="outboundFlight" value="', '" checked="checked"');
-    RETURN_FLIGHT = findBetween(response.body, 'name="returnFlight" value="', '" checked="checked"');
 
     if (!OUTBOUND_FLIGHT) {
       throw new Error('OUTBOUND_FLIGHT not received!');
     }
+
+    RETURN_FLIGHT = findBetween(response.body, 'name="returnFlight" value="', '" checked="checked"');
 
     if (!RETURN_FLIGHT) {
       throw new Error('RETURN_FLIGHT not received!');
@@ -565,8 +585,8 @@ export default function main() {
         returnFlight: RETURN_FLIGHT,
         numPassengers: NUM_PASSANGERS,
         advanceDiscount: '0',
-        seatType: 'Coach',
-        seatPref: 'None',
+        seatType: RANDOM_SEAT_TYPE,
+        seatPref: RANDOM_SEAT_PREF,
         'reserveFlights.x': '76',
         'reserveFlights.y': '6',
       },
@@ -611,8 +631,8 @@ export default function main() {
         expDate: EXP_DATE,
         oldCCOption: '',
         numPassengers: NUM_PASSANGERS,
-        seatType: 'Coach',
-        seatPref: 'None',
+        seatType: RANDOM_SEAT_TYPE,
+        seatPref: RANDOM_SEAT_PREF,
         outboundFlight: OUTBOUND_FLIGHT,
         advanceDiscount: '0',
         returnFlight: RETURN_FLIGHT,
