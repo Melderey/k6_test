@@ -6,7 +6,7 @@
  */
 
 // Билдер вылетает с ошибками при вложенном импорте
-import { sleep, group } from 'k6';
+import { sleep, group, check } from 'k6';
 import http from 'k6/http';
 import { findBetween } from 'https://jslib.k6.io/k6-utils/1.2.0/index.js';
 import { SharedArray } from 'k6/data';
@@ -332,6 +332,10 @@ const getStages = (numSteps, rampUpDuration, stageDuration) => {
   return stages;
 };
 
+const log = (name, value) => {
+  console.log(name, value);
+};
+
 export const options = {
   scenarios: {
     contacts: {
@@ -358,6 +362,7 @@ export default function main() {
   // eslint-disable-next-line no-unused-vars
   let response;
   const vuID = exec.vu.idInTest;
+  log('vuID', vuID);
 
   const {
     LOGIN,
@@ -370,6 +375,8 @@ export default function main() {
     CREDIT_CARD,
     EXP_DATE,
   } = USER_INFO_PARSE[vuID];
+
+  log('LOGIN', LOGIN);
 
   // 01_Open_start_page
   group(`page_1 - http://${HOST}:${PORT}/webtours/`, () => {
@@ -391,6 +398,7 @@ export default function main() {
         'Sec-Fetch-User': '?1',
       },
     });
+
     response = http.get(`http://${HOST}:${PORT}/webtours/header.html`, {
       headers: {
         Host: `${HOST}:${PORT}`,
@@ -409,6 +417,7 @@ export default function main() {
         'Sec-Fetch-Site': 'same-origin',
       },
     });
+
     response = http.get(`http://${HOST}:${PORT}/cgi-bin/welcome.pl?signOff=true`, {
       headers: {
         Host: `${HOST}:${PORT}`,
@@ -427,6 +436,7 @@ export default function main() {
         'Sec-Fetch-Site': 'same-origin',
       },
     });
+
     response = http.get(`http://${HOST}:${PORT}/cgi-bin/nav.pl?in=home`, {
       headers: {
         Host: `${HOST}:${PORT}`,
@@ -447,6 +457,8 @@ export default function main() {
     });
 
     USER_SESSION = findBetween(response.body, '"userSession\" value=\"', '\"/>');
+
+    log('USER_SESSION', USER_SESSION);
 
     if (!USER_SESSION) {
       throw new Error('USER_SESSION not received!');
@@ -646,6 +658,7 @@ export default function main() {
         'Sec-Fetch-User': '?1',
       },
     });
+
     response = http.get(`http://${HOST}:${PORT}/cgi-bin/nav.pl?page=menu&in=flights`, {
       headers: {
         Host: `${HOST}:${PORT}`,
@@ -665,6 +678,7 @@ export default function main() {
         'Sec-Fetch-Site': 'same-origin',
       },
     });
+
     response = http.get(`http://${HOST}:${PORT}/cgi-bin/reservations.pl?page=welcome`, {
       headers: {
         Host: `${HOST}:${PORT}`,
@@ -687,6 +701,7 @@ export default function main() {
 
     // корреляция и поиск случайного города вылета, прилёта
     DEPART_CITIES = findBetween(response.body, '\n<option value=\"', '\">', true);
+    log('DEPART_CITIES', DEPART_CITIES.toString());
 
     if (DEPART_CITIES && DEPART_CITIES.length) {
       DEPART_CITY = getRandomParametr(DEPART_CITIES);
@@ -699,6 +714,9 @@ export default function main() {
       throw new Error('DEPART_CITIES not received!');
     }
 
+    log('DEPART_CITY', DEPART_CITY);
+    log('RETURN_CITY', RETURN_CITY);
+
     SEAT_PREF = findBetween(response.body, 'name="seatPref" value="', '" />', true);
 
     if (!SEAT_PREF) {
@@ -707,12 +725,15 @@ export default function main() {
 
     SEAT_TYPE = findBetween(response.body, 'name="seatType" value="', '" />', true);
 
-    if (!findBetween) {
+    if (!SEAT_TYPE) {
       throw new Error('SEAT_TYPE not received!');
     }
 
     RANDOM_SEAT_PREF = getRandomParametr(SEAT_PREF);
     RANDOM_SEAT_TYPE = getRandomParametr(SEAT_TYPE);
+
+    log('RANDOM_SEAT_PREF', RANDOM_SEAT_PREF);
+    log('RANDOM_SEAT_PREF', RANDOM_SEAT_PREF);
 
     response = http.get(`http://${HOST}:${PORT}/WebTours/images/button_next.gif`, {
       headers: {
@@ -731,6 +752,7 @@ export default function main() {
         'Sec-Fetch-Site': 'same-origin',
       },
     });
+
     response = http.get(`http://${HOST}:${PORT}/WebTours/images/in_flights.gif`, {
       headers: {
         Host: `${HOST}:${PORT}`,
@@ -748,6 +770,7 @@ export default function main() {
         'Sec-Fetch-Site': 'same-origin',
       },
     });
+
     response = http.get(`http://${HOST}:${PORT}/WebTours/images/home.gif`, {
       headers: {
         Host: `${HOST}:${PORT}`,
@@ -765,6 +788,7 @@ export default function main() {
         'Sec-Fetch-Site': 'same-origin',
       },
     });
+
     response = http.get(`http://${HOST}:${PORT}/WebTours/images/itinerary.gif`, {
       headers: {
         Host: `${HOST}:${PORT}`,
@@ -776,6 +800,7 @@ export default function main() {
         Referer: `http://${HOST}:${PORT}/cgi-bin/nav.pl?page=menu&in=flights`,
       },
     });
+
     response = http.get(`http://${HOST}:${PORT}/WebTours/images/signoff.gif`, {
       headers: {
         Host: `${HOST}:${PORT}`,
@@ -831,6 +856,9 @@ export default function main() {
     if (!RETURN_FLIGHT) {
       throw new Error('RETURN_FLIGHT not received!');
     }
+
+    log('OUTBOUND_FLIGHT', OUTBOUND_FLIGHT);
+    log('RETURN_FLIGHT', RETURN_FLIGHT);
 
     response = http.get(`http://${HOST}:${PORT}/WebTours/images/button_next.gif`, {
       headers: {
@@ -991,6 +1019,7 @@ export default function main() {
         'Sec-Fetch-User': '?1',
       },
     });
+
     response = http.get(`http://${HOST}:${PORT}/cgi-bin/nav.pl?page=menu&in=home`, {
       headers: {
         Host: `${HOST}:${PORT}`,
@@ -1010,6 +1039,7 @@ export default function main() {
         'Sec-Fetch-Site': 'same-origin',
       },
     });
+
     response = http.get(`http://${HOST}:${PORT}/cgi-bin/login.pl?intro=true`, {
       headers: {
         Host: `${HOST}:${PORT}`,
@@ -1029,6 +1059,7 @@ export default function main() {
         'Sec-Fetch-Site': 'same-origin',
       },
     });
+
     response = http.get(`http://${HOST}:${PORT}/WebTours/images/flights.gif`, {
       headers: {
         Host: `${HOST}:${PORT}`,
@@ -1046,6 +1077,7 @@ export default function main() {
         'Sec-Fetch-Site': 'same-origin',
       },
     });
+
     response = http.get(`http://${HOST}:${PORT}/WebTours/images/in_home.gif`, {
       headers: {
         Host: `${HOST}:${PORT}`,
@@ -1089,6 +1121,7 @@ export default function main() {
         'Sec-Fetch-User': '?1',
       },
     });
+
     response = http.get(`http://${HOST}:${PORT}/cgi-bin/nav.pl?page=menu&in=itinerary`, {
       headers: {
         Host: `${HOST}:${PORT}`,
@@ -1108,6 +1141,7 @@ export default function main() {
         'Sec-Fetch-Site': 'same-origin',
       },
     });
+
     response = http.get(`http://${HOST}:${PORT}/cgi-bin/itinerary.pl`, {
       headers: {
         Host: `${HOST}:${PORT}`,
@@ -1141,6 +1175,9 @@ export default function main() {
       throw new Error('CGI_FIELDS not received!');
     }
 
+    log('FLIGHTS_ID', FLIGHTS_ID.toString());
+    log('CGI_FIELDS', CGI_FIELDS.toString());
+
     response = http.get(`http://${HOST}:${PORT}/WebTours/images/cancelreservation.gif`, {
       headers: {
         Host: `${HOST}:${PORT}`,
@@ -1158,6 +1195,7 @@ export default function main() {
         'Sec-Fetch-Site': 'same-origin',
       },
     });
+
     response = http.get(`http://${HOST}:${PORT}/WebTours/images/cancelallreservations.gif`, {
       headers: {
         Host: `${HOST}:${PORT}`,
@@ -1175,6 +1213,7 @@ export default function main() {
         'Sec-Fetch-Site': 'same-origin',
       },
     });
+
     response = http.get(`http://${HOST}:${PORT}/WebTours/images/in_itinerary.gif`, {
       headers: {
         Host: `${HOST}:${PORT}`,
@@ -1192,6 +1231,7 @@ export default function main() {
         'Sec-Fetch-Site': 'same-origin',
       },
     });
+
     response = http.get(`http://${HOST}:${PORT}/WebTours/images/flights.gif`, {
       headers: {
         Host: `${HOST}:${PORT}`,
@@ -1217,44 +1257,6 @@ export default function main() {
   });
 
   sleep(RANDOM_SMALL_CONSTANT_DELAY);
-
-  // // // 09_1_Deleting_reservations
-  // group(`page_9 - http://${HOST}:${PORT}/webtours/`, () => {
-  //   response = http.post(
-  //     `http://${HOST}:${PORT}/cgi-bin/itinerary.pl`,
-  //     {
-  //       1: 'on',
-  //       flightID: '246889677-92430-JB',
-  //       'removeFlights.x': '70',
-  //       'removeFlights.y': '14',
-  //       '.cgifields': '1',
-  //     },
-  //     {
-  //       headers: {
-  //         Host: `${HOST}:${PORT}`,
-  //         'User-Agent':
-  //           'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:122.0) Gecko/20100101 Firefox/122.0',
-  //         Accept:
-  //           'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8',
-  //         'Accept-Language': 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3',
-  //         'Accept-Encoding': 'gzip, deflate, br',
-  //         'Content-Type': 'application/x-www-form-urlencoded',
-  //         Origin: `http://${HOST}:${PORT}`,
-  //         Connection: 'keep-alive',
-  //         Referer: `http://${HOST}:${PORT}/cgi-bin/itinerary.pl`,
-  //         Cookie:
-  //           `MSO=SID&1707745210; MTUserInfo=firstName&${FIRST_NAME}&username&${LOGIN}&address2&${ADRESS2}&hash&47&address1&${ADRESS1}&lastName&${LAST_NAME}%0A`,
-  //         'Upgrade-Insecure-Requests': '1',
-  //         'Sec-Fetch-Dest': 'frame',
-  //         'Sec-Fetch-Mode': 'navigate',
-  //         'Sec-Fetch-Site': 'same-origin',
-  //         'Sec-Fetch-User': '?1',
-  //       },
-  //     },
-  //   );
-  // });
-
-  // sleep(RANDOM_SMALL_CONSTANT_DELAY);
 
   // вебтурс может выдать ошибку и не удалить выбранную бронь
   // поэтому необходимо удалять все брони
@@ -1316,6 +1318,7 @@ export default function main() {
         'Sec-Fetch-User': '?1',
       },
     });
+
     response = http.get(`http://${HOST}:${PORT}/cgi-bin/nav.pl?in=home`, {
       headers: {
         Host: `${HOST}:${PORT}`,
@@ -1334,6 +1337,7 @@ export default function main() {
         'Sec-Fetch-Site': 'same-origin',
       },
     });
+
     response = http.get(`http://${HOST}:${PORT}/WebTours/home.html`, {
       headers: {
         Host: `${HOST}:${PORT}`,
@@ -1352,6 +1356,7 @@ export default function main() {
         'Sec-Fetch-Site': 'same-origin',
       },
     });
+
     response = http.get(`http://${HOST}:${PORT}/WebTours/images/mer_login.gif`, {
       headers: {
         Host: `${HOST}:${PORT}`,
@@ -1371,6 +1376,18 @@ export default function main() {
   });
 
   sleep(RANDOM_SMALL_CONSTANT_DELAY);
+
+  check(response, {
+    'is response status 200': (r) => r.status === 200,
+  });
 }
 
-// k6 run full_test.js -o influxdb=http://admin:admin123@172.17.0.2:8086/k6
+// export function handleSummary(data) {
+//   // можно записать конкретную метрику
+//   // const med_latency = data.metrics.iteration_duration.values.med;
+//   // const latency_message = `The median latency was ${med_latency}\n`;
+
+//   return {
+//     stdout_text_summary: JSON.stringify(data),
+//   };
+// }
