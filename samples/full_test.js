@@ -318,7 +318,7 @@ const timeUnit = '2s';
 const preAllocatedVUs = 0;
 const maxVUs = 100;
 const rampupDuration = '1s';
-const stageDuration = '60s';
+const stageDuration = '5s';
 
 const getStages = (numSteps, rampUpDuration, stageDuration) => {
   const stages = [];
@@ -378,8 +378,7 @@ export default function main() {
 
   log('LOGIN', LOGIN);
 
-  // 01_Open_start_page
-  group(`page_1 - http://${HOST}:${PORT}/webtours/`, () => {
+  group('01_Open_start_page', () => {
     response = http.get(`http://${HOST}:${PORT}/webtours/`, {
       headers: {
         Host: `${HOST}:${PORT}`,
@@ -486,8 +485,7 @@ export default function main() {
 
   sleep(RANDOM_SMALL_CONSTANT_DELAY);
 
-  // 02_Login
-  group(`page_2 - http://${HOST}:${PORT}/webtours/`, () => {
+  group('02_Login', () => {
     response = http.post(
       `http://${HOST}:${PORT}/cgi-bin/login.pl`,
       {
@@ -636,8 +634,7 @@ export default function main() {
 
   sleep(RANDOM_SMALL_CONSTANT_DELAY);
 
-  // 03_Opening_tour_search_page
-  group(`page_3 - http://${HOST}:${PORT}/webtours/`, () => {
+  group('03_Opening_tour_search_page', () => {
     response = http.get(`http://${HOST}:${PORT}/cgi-bin/welcome.pl?page=search`, {
       headers: {
         Host: `${HOST}:${PORT}`,
@@ -816,8 +813,7 @@ export default function main() {
 
   sleep(RANDOM_SMALL_CONSTANT_DELAY);
 
-  // 04_Search_round_ticket
-  group(`page_4 - http://${HOST}:${PORT}/webtours/`, () => {
+  group('04_Search_round_ticket', () => {
     response = http.post(
       `http://${HOST}:${PORT}/cgi-bin/reservations.pl`,
       `advanceDiscount=0&depart=${DEPART_CITY}&departDate=${DEPART_DATE}&arrive=${RETURN_CITY}&returnDate=${RETURN_DATE}&numPassengers=${NUM_PASSANGERS}&roundtrip=on&seatPref=${RANDOM_SEAT_PREF}&seatType=${RANDOM_SEAT_TYPE}&findFlights.x=75&findFlights.y=8&.cgifields=roundtrip%2CseatType%2CseatPref`,
@@ -875,8 +871,7 @@ export default function main() {
 
   sleep(RANDOM_LONG_CONSTANT_DELAY);
 
-  // 05_Select_results
-  group(`page_5 - http://${HOST}:${PORT}/webtours/`, () => {
+  group('05_Select_results', () => {
     response = http.post(
       `http://${HOST}:${PORT}/cgi-bin/reservations.pl`,
       {
@@ -916,8 +911,7 @@ export default function main() {
 
   sleep(RANDOM_LONG_CONSTANT_DELAY);
 
-  // 06_1_Completing_booking
-  group(`page_6 - http://${HOST}:${PORT}/webtours/`, () => {
+  group('06_Completing_booking', () => {
     response = http.post(
       `http://${HOST}:${PORT}/cgi-bin/reservations.pl`,
       {
@@ -997,8 +991,7 @@ export default function main() {
 
   sleep(RANDOM_LONG_CONSTANT_DELAY);
 
-  // 07_Go_home_page
-  group(`page_7 - http://${HOST}:${PORT}/webtours/`, () => {
+  group('07_Go_home_page', () => {
     response = http.get(`http://${HOST}:${PORT}/cgi-bin/welcome.pl?page=menus`, {
       headers: {
         Host: `${HOST}:${PORT}`,
@@ -1099,8 +1092,7 @@ export default function main() {
 
   sleep(RANDOM_SMALL_CONSTANT_DELAY);
 
-  // 08_Opening_reservations
-  group(`page_8 - http://${HOST}:${PORT}/webtours/`, () => {
+  group('08_Opening_reservations', () => {
     response = http.get(`http://${HOST}:${PORT}/cgi-bin/welcome.pl?page=itinerary`, {
       headers: {
         Host: `${HOST}:${PORT}`,
@@ -1263,8 +1255,7 @@ export default function main() {
   RECPONCE_LINE_ID = getResponceLine(FLIGHTS_ID, '%2C');
   RECPONCE_LINE_CGI_FIELDS = getResponceLine(CGI_FIELDS, '%2C');
 
-  // 09_2_Deleting_reservations_all
-  group(`page_6 - http://${HOST}:${PORT}/webtours/`, () => {
+  group('09_Deleting_reservations', () => {
     response = http.post(
       `http://${HOST}:${PORT}/cgi-bin/itinerary.pl`,
       // 'flightID=24691373-135397-JB%2C753-1564-JB&removeAllFlights.x=64&removeAllFlights.y=9&.cgifields=1%2C2',
@@ -1296,8 +1287,7 @@ export default function main() {
 
   sleep(RANDOM_SMALL_CONSTANT_DELAY);
 
-  // 10_Logout
-  group(`page_10 - http://${HOST}:${PORT}/webtours/`, () => {
+  group('10_Logout', () => {
     response = http.get(`http://${HOST}:${PORT}/cgi-bin/welcome.pl?signOff=1`, {
       headers: {
         Host: `${HOST}:${PORT}`,
