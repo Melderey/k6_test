@@ -12,3 +12,6 @@ lint:
 
 fix:
 	npm run lint -- --fix
+
+up:
+	docker compose up -d

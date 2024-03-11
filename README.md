@@ -49,6 +49,10 @@ make run
 ```
 
 ```shell
+make up
+```
+
+```shell
 make docker
 ```
 
