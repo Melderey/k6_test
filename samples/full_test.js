@@ -337,6 +337,26 @@ const log = (name, value) => {
 };
 
 export const options = {
+  thresholds: {
+    // http errors should be less than 5%
+    http_req_failed: [
+      {
+        threshold: 'rate<0.05',
+        abortOnFail: true, // boolean
+        delayAbortEval: '10s', // string
+      },
+    ],
+
+    // 95% of requests should be below 20000ms
+    http_req_duration: [
+      {
+        threshold: 'p(95)<20000',
+        abortOnFail: true, // boolean
+        delayAbortEval: '10s', // string
+      },
+    ],
+  },
+
   scenarios: {
     contacts: {
       executor,
