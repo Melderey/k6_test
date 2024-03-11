@@ -317,13 +317,13 @@ const startRate = 1;
 const timeUnit = '2s';
 const preAllocatedVUs = 0;
 const maxVUs = 100;
-const rampupDuration = '5s';
+const rampupDuration = '1s';
 const stageDuration = '60s';
 
 const getStages = (numSteps, rampUpDuration, stageDuration) => {
   const stages = [];
 
-  for (let i = 0; i <= numSteps; i += 1) {
+  for (let i = 1; i <= numSteps; i += 1) {
     const target = i;
     stages.push({ target, duration: rampUpDuration });
     stages.push({ target, duration: stageDuration });
