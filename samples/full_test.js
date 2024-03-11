@@ -318,7 +318,7 @@ const timeUnit = '2s';
 const preAllocatedVUs = 0;
 const maxVUs = 100;
 const rampupDuration = '1s';
-const stageDuration = '5s';
+const stageDuration = '60s';
 
 const getStages = (numSteps, rampUpDuration, stageDuration) => {
   const stages = [];
